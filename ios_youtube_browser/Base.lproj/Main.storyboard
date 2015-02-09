@@ -27,7 +27,7 @@
         <!--YouTube Browser-->
         <scene sceneID="Gm4-dx-6QY">
             <objects>
-                <viewController id="uZN-Fd-71f" sceneMemberID="viewController">
+                <viewController id="uZN-Fd-71f" customClass="MainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MIF-gg-80C"/>
                         <viewControllerLayoutGuide type="bottom" id="efQ-dk-HEG"/>
@@ -69,9 +69,31 @@
                                     <constraint firstAttribute="height" constant="50" id="vs9-0T-flY"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="eJf-Ev-mef">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="158" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="eJf-Ev-mef">
                                 <rect key="frame" x="0.0" y="115" width="600" height="485"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MainMenuTableCellId" rowHeight="158" id="u6p-SP-Rto" customClass="MainMenuTableCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="u6p-SP-Rto" id="r2p-0q-C1u">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rSu-kO-BAx">
+                                                    <rect key="frame" x="8" y="9" width="290" height="142"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="videoView" destination="rSu-kO-BAx" id="8Pr-Cr-K1v"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="uZN-Fd-71f" id="eYs-df-wyy"/>
+                                    <outlet property="delegate" destination="uZN-Fd-71f" id="H3r-0E-r2g"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -86,10 +108,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="YouTube Browser" id="R0E-gY-ej5"/>
+                    <connections>
+                        <outlet property="searchButton" destination="AAj-nP-Sg9" id="yoP-B5-fou"/>
+                        <outlet property="searchTextField" destination="KLU-9n-aNb" id="FSq-Y0-Xbz"/>
+                        <outlet property="tableView" destination="eJf-Ev-mef" id="1bS-iC-J7T"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bvv-4f-Q8H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="747" y="356"/>
+            <point key="canvasLocation" x="747" y="354"/>
         </scene>
     </scenes>
 </document>
