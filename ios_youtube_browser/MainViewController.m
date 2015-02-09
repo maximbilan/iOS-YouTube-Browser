@@ -10,8 +10,11 @@
 #import "MainMenuTableCell.h"
 
 #import "AFNetworking.h"
+#import "YTPlayerView.h"
 
 static NSString * const MainMenuTableCellId = @"MainMenuTableCellId";
+static NSString * const YouTubeBaseUrl = @"https://www.googleapis.com/youtube/v3/search?part=snippet&q=%@&type=video&videoCaption=closedCaption&key=%@";
+static NSString * const YouTubeAppKey = @"AIzaSyCs0lcHGW2oW88FO8FeR8j_hXMc9oCG6p0";
 
 @interface MainViewController () <UITableViewDelegate, UITableViewDataSource>
 {
@@ -35,7 +38,24 @@ static NSString * const MainMenuTableCellId = @"MainMenuTableCellId";
 
 - (void)fetchYoutubeData:(NSString *)searchString
 {
-	
+	NSString *url = [NSString stringWithFormat:YouTubeBaseUrl, searchString, YouTubeAppKey];
+	AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+	[manager GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+		NSLog(@"JSON: %@", responseObject);
+		NSDictionary *d = (NSDictionary *)responseObject;
+		if (d) {
+			if ([d valueForKey:@"items"]) {
+				NSArray *items = [d objectForKey:@"items"];
+				if (items) {
+					[data removeAllObjects];
+					[data addObjectsFromArray:items];
+					[self.tableView reloadData];
+				}
+			}
+		}
+	} failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+		NSLog(@"Error: %@", error);
+	}];
 }
 
 #pragma mark - UITableViewDataSource
@@ -48,6 +68,22 @@ static NSString * const MainMenuTableCellId = @"MainMenuTableCellId";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
 	MainMenuTableCell *cell = (MainMenuTableCell *)[tableView dequeueReusableCellWithIdentifier:MainMenuTableCellId];
+	
+	NSDictionary *object = [data objectAtIndex:indexPath.row];
+	if (object) {
+		if ([object valueForKey:@"id"]) {
+			NSDictionary *idDict = [object valueForKey:@"id"];
+			if (idDict) {
+				if ([idDict valueForKey:@"videoId"]) {
+					NSString *videoId = [idDict objectForKey:@"videoId"];
+					if (videoId && videoId.length > 0) {
+						[cell.videoView loadWithVideoId:videoId];
+					}
+				}
+			}
+		}
+	}
+	
 	return cell;
 }
 
@@ -56,6 +92,15 @@ static NSString * const MainMenuTableCellId = @"MainMenuTableCellId";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
 	
+}
+
+#pragma mark - Search action
+
+- (IBAction)searchAction:(UIButton *)sender
+{
+	if (self.searchTextField.text.length > 0) {
+		[self fetchYoutubeData:self.searchTextField.text];
+	}
 }
 
 /*

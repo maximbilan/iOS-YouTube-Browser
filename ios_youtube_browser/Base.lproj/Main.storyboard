@@ -52,6 +52,9 @@
                                         <state key="normal" title="Search">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="searchAction:" destination="uZN-Fd-71f" eventType="touchUpInside" id="eMl-Jh-Guc"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -79,14 +82,14 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="u6p-SP-Rto" id="r2p-0q-C1u">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rSu-kO-BAx">
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rSu-kO-BAx" customClass="YTPlayerView">
                                                     <rect key="frame" x="8" y="9" width="290" height="142"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </view>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="videoView" destination="rSu-kO-BAx" id="8Pr-Cr-K1v"/>
+                                            <outlet property="videoView" destination="rSu-kO-BAx" id="pzY-5b-OnO"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

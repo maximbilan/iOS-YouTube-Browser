@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class YTPlayerView;
+
 @interface MainMenuTableCell : UITableViewCell
 
-@property (weak, nonatomic) IBOutlet UIView *videoView;
+@property (weak, nonatomic) IBOutlet YTPlayerView *videoView;
 
 @end
