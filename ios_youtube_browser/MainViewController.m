@@ -82,6 +82,26 @@ static NSString * const YouTubeAppKey = @"AIzaSyCs0lcHGW2oW88FO8FeR8j_hXMc9oCG6p
 				}
 			}
 		}
+		if ([object valueForKey:@"snippet"]) {
+			NSDictionary *snippet = [object valueForKey:@"snippet"];
+			if (snippet) {
+				if ([snippet valueForKey:@"thumbnails"]) {
+					NSDictionary *thumbnails = [snippet valueForKey:@"thumbnails"];
+					if (thumbnails) {
+						if ([thumbnails valueForKey:@"default"]) {
+							NSDictionary *defaultThumbnail = [thumbnails valueForKey:@"default"];
+							if (defaultThumbnail) {
+								NSString *url = [defaultThumbnail objectForKey:@"url"];
+								int a;
+								a = 0;
+							}
+						}
+					}
+				}
+				
+				
+			}
+		}
 	}
 	
 	return cell;
