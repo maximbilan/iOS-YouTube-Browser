@@ -96,6 +96,16 @@ static NSString * const YouTubeAppKey = @"AIzaSyCs0lcHGW2oW88FO8FeR8j_hXMc9oCG6p
 								a = 0;
 							}
 						}
+						
+						if ([thumbnails valueForKey:@"high"]) {
+							NSDictionary *highThumbnail = [thumbnails valueForKey:@"high"];
+							if (highThumbnail) {
+								NSString *url = [highThumbnail objectForKey:@"url"];
+								int a;
+								a = 0;
+							}
+						}
+						
 					}
 				}
 				
