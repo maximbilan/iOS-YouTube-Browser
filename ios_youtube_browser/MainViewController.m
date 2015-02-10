@@ -99,7 +99,8 @@ static NSString * const YouTubeAppKey = @"AIzaSyCs0lcHGW2oW88FO8FeR8j_hXMc9oCG6p
 - (IBAction)searchAction:(UIButton *)sender
 {
 	if (self.searchTextField.text.length > 0) {
-		[self fetchYoutubeData:self.searchTextField.text];
+		NSString *str = [self.searchTextField.text stringByReplacingOccurrencesOfString:@" " withString:@"+"];
+		[self fetchYoutubeData:str];
 	}
 }
 
