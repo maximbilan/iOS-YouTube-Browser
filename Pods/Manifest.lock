@@ -24,10 +24,20 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
-  - youtube-ios-player-helper
+  - youtube-ios-player-helper (from `https://github.com/maximbilan/youtube-ios-player-helper.git`, branch `develop`)
+
+EXTERNAL SOURCES:
+  youtube-ios-player-helper:
+    :branch: develop
+    :git: https://github.com/maximbilan/youtube-ios-player-helper.git
+
+CHECKOUT OPTIONS:
+  youtube-ios-player-helper:
+    :commit: 8e922073f7af32983b71e8fecab2c8e4f0edec45
+    :git: https://github.com/maximbilan/youtube-ios-player-helper.git
 
 SPEC CHECKSUMS:
   AFNetworking: 8bee59492a6ff15d69130efa4d0dc67e0094a52a
-  youtube-ios-player-helper: 53aecd0b4763a77e6890e9a7c55abb7b5c4bedea
+  youtube-ios-player-helper: 1fad794b7c6a0d00d98e77f7b98726fabfc6b209
 
 COCOAPODS: 0.35.0
