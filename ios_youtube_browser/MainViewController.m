@@ -46,7 +46,7 @@ static const NSInteger YouTubeMaxResults = 30;
 		NSDictionary *d = (NSDictionary *)responseObject;
 		if (d) {
 			if ([d valueForKey:@"items"]) {
-				NSArray *items = [d objectForKey:@"items"];
+				NSArray *items = d[@"items"];
 				if (items) {
 					[data removeAllObjects];
 					[data addObjectsFromArray:items];
@@ -70,17 +70,47 @@ static const NSInteger YouTubeMaxResults = 30;
 {
 	MainMenuTableCell *cell = (MainMenuTableCell *)[tableView dequeueReusableCellWithIdentifier:MainMenuTableCellId];
 	
-	NSDictionary *object = [data objectAtIndex:indexPath.row];
+	NSDictionary *object = data[indexPath.row];
 	if (object) {
 		if ([object valueForKey:@"id"]) {
 			NSDictionary *idDict = [object valueForKey:@"id"];
 			if (idDict) {
 				if ([idDict valueForKey:@"videoId"]) {
-					NSString *videoId = [idDict objectForKey:@"videoId"];
+					NSString *videoId = idDict[@"videoId"];
 					if (videoId && videoId.length > 0) {
 						[cell.videoView loadWithVideoId:videoId];
 					}
 				}
+			}
+		}
+		if ([object valueForKey:@"snippet"]) {
+			NSDictionary *snippet = [object valueForKey:@"snippet"];
+			if (snippet) {
+				if ([snippet valueForKey:@"thumbnails"]) {
+					NSDictionary *thumbnails = [snippet valueForKey:@"thumbnails"];
+					if (thumbnails) {
+						if ([thumbnails valueForKey:@"default"]) {
+							NSDictionary *defaultThumbnail = [thumbnails valueForKey:@"default"];
+							if (defaultThumbnail) {
+								NSString *url = defaultThumbnail[@"url"];
+								int a;
+								a = 0;
+							}
+						}
+						
+						if ([thumbnails valueForKey:@"high"]) {
+							NSDictionary *highThumbnail = [thumbnails valueForKey:@"high"];
+							if (highThumbnail) {
+								NSString *url = highThumbnail[@"url"];
+								int a;
+								a = 0;
+							}
+						}
+						
+					}
+				}
+				
+				
 			}
 		}
 	}
@@ -100,7 +130,8 @@ static const NSInteger YouTubeMaxResults = 30;
 - (IBAction)searchAction:(UIButton *)sender
 {
 	if (self.searchTextField.text.length > 0) {
-		[self fetchYoutubeData:self.searchTextField.text];
+		NSString *str = [self.searchTextField.text stringByReplacingOccurrencesOfString:@" " withString:@"+"];
+		[self fetchYoutubeData:str];
 	}
 }
 
