@@ -45,7 +45,7 @@ static NSString * const YouTubeAppKey = @"AIzaSyCs0lcHGW2oW88FO8FeR8j_hXMc9oCG6p
 		NSDictionary *d = (NSDictionary *)responseObject;
 		if (d) {
 			if ([d valueForKey:@"items"]) {
-				NSArray *items = [d objectForKey:@"items"];
+				NSArray *items = d[@"items"];
 				if (items) {
 					[data removeAllObjects];
 					[data addObjectsFromArray:items];
@@ -69,13 +69,13 @@ static NSString * const YouTubeAppKey = @"AIzaSyCs0lcHGW2oW88FO8FeR8j_hXMc9oCG6p
 {
 	MainMenuTableCell *cell = (MainMenuTableCell *)[tableView dequeueReusableCellWithIdentifier:MainMenuTableCellId];
 	
-	NSDictionary *object = [data objectAtIndex:indexPath.row];
+	NSDictionary *object = data[indexPath.row];
 	if (object) {
 		if ([object valueForKey:@"id"]) {
 			NSDictionary *idDict = [object valueForKey:@"id"];
 			if (idDict) {
 				if ([idDict valueForKey:@"videoId"]) {
-					NSString *videoId = [idDict objectForKey:@"videoId"];
+					NSString *videoId = idDict[@"videoId"];
 					if (videoId && videoId.length > 0) {
 						[cell.videoView loadWithVideoId:videoId];
 					}
@@ -91,7 +91,7 @@ static NSString * const YouTubeAppKey = @"AIzaSyCs0lcHGW2oW88FO8FeR8j_hXMc9oCG6p
 						if ([thumbnails valueForKey:@"default"]) {
 							NSDictionary *defaultThumbnail = [thumbnails valueForKey:@"default"];
 							if (defaultThumbnail) {
-								NSString *url = [defaultThumbnail objectForKey:@"url"];
+								NSString *url = defaultThumbnail[@"url"];
 								int a;
 								a = 0;
 							}
@@ -100,7 +100,7 @@ static NSString * const YouTubeAppKey = @"AIzaSyCs0lcHGW2oW88FO8FeR8j_hXMc9oCG6p
 						if ([thumbnails valueForKey:@"high"]) {
 							NSDictionary *highThumbnail = [thumbnails valueForKey:@"high"];
 							if (highThumbnail) {
-								NSString *url = [highThumbnail objectForKey:@"url"];
+								NSString *url = highThumbnail[@"url"];
 								int a;
 								a = 0;
 							}
