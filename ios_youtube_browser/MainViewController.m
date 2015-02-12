@@ -70,6 +70,11 @@ static const NSInteger YouTubeMaxResults = 30;
 {
 	MainMenuTableCell *cell = (MainMenuTableCell *)[tableView dequeueReusableCellWithIdentifier:MainMenuTableCellId];
 	
+	NSString *ytVideoId = nil;
+	NSString *ytDefaultThumbnail = nil;
+	NSString *ytMediumThumbnail = nil;
+	NSString *ytHighThumbnail = nil;
+	
 	NSDictionary *object = data[indexPath.row];
 	if (object) {
 		if ([object valueForKey:@"id"]) {
@@ -78,7 +83,7 @@ static const NSInteger YouTubeMaxResults = 30;
 				if ([idDict valueForKey:@"videoId"]) {
 					NSString *videoId = idDict[@"videoId"];
 					if (videoId && videoId.length > 0) {
-						[cell.videoView loadWithVideoId:videoId];
+						ytVideoId = videoId;
 					}
 				}
 			}
@@ -92,27 +97,29 @@ static const NSInteger YouTubeMaxResults = 30;
 						if ([thumbnails valueForKey:@"default"]) {
 							NSDictionary *defaultThumbnail = [thumbnails valueForKey:@"default"];
 							if (defaultThumbnail) {
-								NSString *url = defaultThumbnail[@"url"];
-								int a;
-								a = 0;
+								ytDefaultThumbnail = defaultThumbnail[@"url"];
+							}
+						}
+						
+						if ([thumbnails valueForKey:@"medium"]) {
+							NSDictionary *mediumThumbnail = [thumbnails valueForKey:@"medium"];
+							if (mediumThumbnail) {
+								ytMediumThumbnail = mediumThumbnail[@"url"];
 							}
 						}
 						
 						if ([thumbnails valueForKey:@"high"]) {
 							NSDictionary *highThumbnail = [thumbnails valueForKey:@"high"];
 							if (highThumbnail) {
-								NSString *url = highThumbnail[@"url"];
-								int a;
-								a = 0;
+								ytHighThumbnail = highThumbnail[@"url"];
 							}
 						}
-						
 					}
 				}
-				
-				
 			}
 		}
+		
+		
 	}
 	
 	return cell;

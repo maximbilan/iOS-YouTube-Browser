@@ -12,6 +12,7 @@
 
 @interface MainMenuTableCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UIImageView *thumbnailImageView;
 @property (weak, nonatomic) IBOutlet YTPlayerView *videoView;
 
 @end

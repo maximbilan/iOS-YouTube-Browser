@@ -82,14 +82,30 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="u6p-SP-Rto" id="r2p-0q-C1u">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rSu-kO-BAx" customClass="YTPlayerView">
-                                                    <rect key="frame" x="8" y="9" width="290" height="142"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9rY-VS-suH">
+                                                    <rect key="frame" x="8" y="4" width="223" height="149"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="223" id="Bt6-9p-SoM"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lKZ-ct-7I4">
+                                                    <rect key="frame" x="239" y="4" width="353" height="150"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </view>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="lKZ-ct-7I4" firstAttribute="leading" secondItem="9rY-VS-suH" secondAttribute="trailing" constant="8" id="3ZQ-R0-9Ip"/>
+                                                <constraint firstItem="lKZ-ct-7I4" firstAttribute="trailing" secondItem="r2p-0q-C1u" secondAttribute="trailingMargin" id="3cc-qT-cWp"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="9rY-VS-suH" secondAttribute="bottom" constant="-4" id="IIc-YT-XE9"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="lKZ-ct-7I4" secondAttribute="bottom" constant="-5" id="MMA-X4-Ms1"/>
+                                                <constraint firstItem="9rY-VS-suH" firstAttribute="leading" secondItem="r2p-0q-C1u" secondAttribute="leadingMargin" id="eg3-ru-b9Q"/>
+                                                <constraint firstItem="9rY-VS-suH" firstAttribute="top" secondItem="r2p-0q-C1u" secondAttribute="topMargin" constant="-4" id="lkQ-w1-3LN"/>
+                                                <constraint firstItem="lKZ-ct-7I4" firstAttribute="leading" secondItem="9rY-VS-suH" secondAttribute="trailing" constant="8" id="xXy-Yw-Rgk"/>
+                                                <constraint firstItem="lKZ-ct-7I4" firstAttribute="top" secondItem="r2p-0q-C1u" secondAttribute="topMargin" constant="-4" id="yTY-BZ-kbT"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="videoView" destination="rSu-kO-BAx" id="pzY-5b-OnO"/>
+                                            <outlet property="thumbnailImageView" destination="9rY-VS-suH" id="qZt-aH-8UY"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -119,7 +135,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bvv-4f-Q8H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="747" y="354"/>
+            <point key="canvasLocation" x="747" y="348"/>
         </scene>
     </scenes>
 </document>
