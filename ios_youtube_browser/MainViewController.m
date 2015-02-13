@@ -77,6 +77,10 @@ static const NSInteger YouTubeMaxResults = 30;
 	NSString *ytMediumThumbnail = nil;
 	NSString *ytHighThumbnail = nil;
 	
+	NSString *ytTitle = nil;
+	NSString *ytDescription = nil;
+	NSString *ytChannel = nil;
+	
 	NSDictionary *object = data[indexPath.row];
 	if (object) {
 		if ([object valueForKey:@"id"]) {
@@ -118,7 +122,29 @@ static const NSInteger YouTubeMaxResults = 30;
 						}
 					}
 				}
+				
+				if ([snippet valueForKey:@"title"]) {
+					ytTitle = [snippet objectForKey:@"title"];
+				}
+				
+				if ([snippet valueForKey:@"description"]) {
+					ytDescription = [snippet objectForKey:@"description"];
+				}
+				
+				if ([snippet valueForKey:@"channelTitle"]) {
+					ytChannel = [snippet objectForKey:@"channelTitle"];
+				}
 			}
+		}
+		
+		if (ytTitle) {
+			
+		}
+		if (ytDescription) {
+			
+		}
+		if (ytChannel) {
+			
 		}
 		
 		[cell.thumbnailImageView sd_setImageWithURL:[NSURL URLWithString:ytMediumThumbnail]];
