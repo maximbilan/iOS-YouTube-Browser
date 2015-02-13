@@ -80,6 +80,7 @@ static const NSInteger YouTubeMaxResults = 30;
 	NSString *ytTitle = nil;
 	NSString *ytDescription = nil;
 	NSString *ytChannel = nil;
+	NSString *ytPublishedAt = nil;
 	
 	NSDictionary *object = data[indexPath.row];
 	if (object) {
@@ -134,6 +135,10 @@ static const NSInteger YouTubeMaxResults = 30;
 				if ([snippet valueForKey:@"channelTitle"]) {
 					ytChannel = [snippet objectForKey:@"channelTitle"];
 				}
+				
+				if ([snippet valueForKey:@"publishedAt"]) {
+					ytPublishedAt = [snippet objectForKey:@"publishedAt"];
+				}
 			}
 		}
 		
@@ -145,6 +150,9 @@ static const NSInteger YouTubeMaxResults = 30;
 		}
 		if (ytChannel) {
 			cell.channelLabel.text = ytChannel;
+		}
+		if (ytPublishedAt) {
+			cell.dateLabel.text = ytPublishedAt;
 		}
 		
 		[cell.thumbnailImageView sd_setImageWithURL:[NSURL URLWithString:ytMediumThumbnail]];
