@@ -138,13 +138,13 @@ static const NSInteger YouTubeMaxResults = 30;
 		}
 		
 		if (ytTitle) {
-			
+			cell.titleLabel.text = ytTitle;
 		}
 		if (ytDescription) {
-			
+			cell.descriptionTextView.text = ytDescription;
 		}
 		if (ytChannel) {
-			
+			cell.channelLabel.text = ytChannel;
 		}
 		
 		[cell.thumbnailImageView sd_setImageWithURL:[NSURL URLWithString:ytMediumThumbnail]];

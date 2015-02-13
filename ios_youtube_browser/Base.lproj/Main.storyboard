@@ -131,7 +131,11 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="channelLabel" destination="Iv6-6O-J1s" id="PzM-Rp-ngl"/>
+                                            <outlet property="dateLabel" destination="cEX-1z-fsS" id="OwI-Yk-zSj"/>
+                                            <outlet property="descriptionTextView" destination="lgx-Z0-lSG" id="Rfe-A2-oT3"/>
                                             <outlet property="thumbnailImageView" destination="9rY-VS-suH" id="qZt-aH-8UY"/>
+                                            <outlet property="titleLabel" destination="PQo-4e-bbV" id="G72-Tv-Hma"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
