@@ -19,7 +19,7 @@
 static NSString * const MainMenuTableCellId = @"MainMenuTableCellId";
 static NSString * const YouTubeBaseUrl = @"https://www.googleapis.com/youtube/v3/search?part=snippet&q=%@&type=video&videoCaption=closedCaption&key=%@&maxResults=%@";
 static NSString * const YouTubeAppKey = @"AIzaSyCs0lcHGW2oW88FO8FeR8j_hXMc9oCG6p0";
-static const NSInteger YouTubeMaxResults = 30;
+static const NSInteger YouTubeMaxResults = 50;
 
 @interface MainViewController () <UITableViewDelegate, UITableViewDataSource>
 {
