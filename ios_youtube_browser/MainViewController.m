@@ -9,6 +9,8 @@
 #import "MainViewController.h"
 #import "MainMenuTableCell.h"
 
+#import "YouTubeViewController.h"
+
 #import "AFNetworking.h"
 #import "YTPlayerView.h"
 
@@ -178,14 +180,45 @@ static const NSInteger YouTubeMaxResults = 30;
 	}
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+	NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+	
+	YouTubeViewController *controller = [segue destinationViewController];
+	
+	NSString *ytVideoId = nil;
+	NSString *ytTitle = nil;
+	NSDictionary *object = data[indexPath.row];
+	if (object) {
+		if ([object valueForKey:@"id"]) {
+			NSDictionary *idDict = [object valueForKey:@"id"];
+			if (idDict) {
+				if ([idDict valueForKey:@"videoId"]) {
+					NSString *videoId = idDict[@"videoId"];
+					if (videoId && videoId.length > 0) {
+						ytVideoId = videoId;
+					}
+				}
+			}
+		}
+		
+		if ([object valueForKey:@"snippet"]) {
+			NSDictionary *snippet = [object valueForKey:@"snippet"];
+			if (snippet) {
+				if ([snippet valueForKey:@"title"]) {
+					ytTitle = [snippet objectForKey:@"title"];
+				}
+			}
+		}
+	}
+	
+	controller.videoId = ytVideoId;
+	controller.navigationItem.title = ytTitle;
 }
-*/
+
 
 @end

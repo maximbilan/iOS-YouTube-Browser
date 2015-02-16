@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D4D0DB01A928D98008AE758 /* YouTubeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D4D0DAF1A928D98008AE758 /* YouTubeViewController.m */; };
 		6D8E95A21A89153A006E4ED3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8E95A11A89153A006E4ED3 /* main.m */; };
 		6D8E95A51A89153A006E4ED3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8E95A41A89153A006E4ED3 /* AppDelegate.m */; };
 		6D8E95AB1A89153A006E4ED3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D8E95A91A89153A006E4ED3 /* Main.storyboard */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6D4D0DAE1A928D98008AE758 /* YouTubeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouTubeViewController.h; sourceTree = "<group>"; };
+		6D4D0DAF1A928D98008AE758 /* YouTubeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YouTubeViewController.m; sourceTree = "<group>"; };
 		6D8E959C1A89153A006E4ED3 /* ios_youtube_browser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_youtube_browser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D8E95A01A89153A006E4ED3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D8E95A11A89153A006E4ED3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -95,6 +98,8 @@
 				6DBBDF4F1A8938E6002E0240 /* MainViewController.m */,
 				6DBBDF511A893AAF002E0240 /* MainMenuTableCell.h */,
 				6DBBDF521A893AAF002E0240 /* MainMenuTableCell.m */,
+				6D4D0DAE1A928D98008AE758 /* YouTubeViewController.h */,
+				6D4D0DAF1A928D98008AE758 /* YouTubeViewController.m */,
 			);
 			path = ios_youtube_browser;
 			sourceTree = "<group>";
@@ -216,6 +221,7 @@
 				6DBBDF531A893AAF002E0240 /* MainMenuTableCell.m in Sources */,
 				6D8E95A51A89153A006E4ED3 /* AppDelegate.m in Sources */,
 				6D8E95A21A89153A006E4ED3 /* main.m in Sources */,
+				6D4D0DB01A928D98008AE758 /* YouTubeViewController.m in Sources */,
 				6DBBDF501A8938E6002E0240 /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
