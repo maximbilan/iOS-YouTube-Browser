@@ -127,19 +127,19 @@ static const NSInteger YouTubeMaxResults = 50;
 				}
 				
 				if ([snippet valueForKey:@"title"]) {
-					ytTitle = [snippet objectForKey:@"title"];
+					ytTitle = snippet[@"title"];
 				}
 				
 				if ([snippet valueForKey:@"description"]) {
-					ytDescription = [snippet objectForKey:@"description"];
+					ytDescription = snippet[@"description"];
 				}
 				
 				if ([snippet valueForKey:@"channelTitle"]) {
-					ytChannel = [snippet objectForKey:@"channelTitle"];
+					ytChannel = snippet[@"channelTitle"];
 				}
 				
 				if ([snippet valueForKey:@"publishedAt"]) {
-					ytPublishedAt = [snippet objectForKey:@"publishedAt"];
+					ytPublishedAt = snippet[@"publishedAt"];
 				}
 			}
 		}
@@ -210,7 +210,7 @@ static const NSInteger YouTubeMaxResults = 50;
 			NSDictionary *snippet = [object valueForKey:@"snippet"];
 			if (snippet) {
 				if ([snippet valueForKey:@"title"]) {
-					ytTitle = [snippet objectForKey:@"title"];
+					ytTitle = snippet[@"title"];
 				}
 			}
 		}
