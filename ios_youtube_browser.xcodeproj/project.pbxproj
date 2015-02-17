@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D3EEAEB1A93349100580087 /* Main-iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D3EEAE91A93349100580087 /* Main-iPhone.storyboard */; };
 		6D4D0DB01A928D98008AE758 /* YouTubeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D4D0DAF1A928D98008AE758 /* YouTubeViewController.m */; };
 		6D8E95A21A89153A006E4ED3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8E95A11A89153A006E4ED3 /* main.m */; };
 		6D8E95A51A89153A006E4ED3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8E95A41A89153A006E4ED3 /* AppDelegate.m */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6D3EEAEA1A93349100580087 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Main-iPhone.storyboard"; sourceTree = "<group>"; };
 		6D4D0DAE1A928D98008AE758 /* YouTubeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouTubeViewController.h; sourceTree = "<group>"; };
 		6D4D0DAF1A928D98008AE758 /* YouTubeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YouTubeViewController.m; sourceTree = "<group>"; };
 		6D8E959C1A89153A006E4ED3 /* ios_youtube_browser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_youtube_browser.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +90,7 @@
 		6D8E959E1A89153A006E4ED3 /* ios_youtube_browser */ = {
 			isa = PBXGroup;
 			children = (
+				6D3EEAE91A93349100580087 /* Main-iPhone.storyboard */,
 				6D8E95A31A89153A006E4ED3 /* AppDelegate.h */,
 				6D8E95A41A89153A006E4ED3 /* AppDelegate.m */,
 				6D8E95A91A89153A006E4ED3 /* Main.storyboard */,
@@ -174,6 +177,7 @@
 			files = (
 				6D8E95AB1A89153A006E4ED3 /* Main.storyboard in Resources */,
 				6D8E95B01A89153A006E4ED3 /* LaunchScreen.xib in Resources */,
+				6D3EEAEB1A93349100580087 /* Main-iPhone.storyboard in Resources */,
 				6D8E95AD1A89153A006E4ED3 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,6 +233,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		6D3EEAE91A93349100580087 /* Main-iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D3EEAEA1A93349100580087 /* Base */,
+			);
+			name = "Main-iPhone.storyboard";
+			sourceTree = "<group>";
+		};
 		6D8E95A91A89153A006E4ED3 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
