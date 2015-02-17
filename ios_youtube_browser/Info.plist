@@ -24,8 +24,10 @@
 	<true/>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
-	<key>UIMainStoryboardFile</key>
+	<key>UIMainStoryboardFile~ipad</key>
 	<string>Main</string>
+	<key>UIMainStoryboardFile~iphone</key>
+	<string>Main-iPhone</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
