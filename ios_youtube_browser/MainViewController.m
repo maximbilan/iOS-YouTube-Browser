@@ -43,7 +43,8 @@ static const NSInteger YouTubeMaxResults = 50;
 
 - (void)fetchYoutubeData:(NSString *)searchString
 {
-	NSString *url = [NSString stringWithFormat:YouTubeBaseUrl, searchString, YouTubeAppKey, @(YouTubeMaxResults)];
+	NSString *str = [searchString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+	NSString *url = [NSString stringWithFormat:YouTubeBaseUrl, str, YouTubeAppKey, @(YouTubeMaxResults)];
 	AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
 	[manager GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
 		NSLog(@"JSON: %@", responseObject);
