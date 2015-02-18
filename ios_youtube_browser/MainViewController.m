@@ -221,5 +221,4 @@ static const NSInteger YouTubeMaxResults = 50;
 	controller.navigationItem.title = ytTitle;
 }
 
-
 @end
