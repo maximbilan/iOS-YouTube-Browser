@@ -90,19 +90,17 @@
 		6D8E959E1A89153A006E4ED3 /* ios_youtube_browser */ = {
 			isa = PBXGroup;
 			children = (
-				6D3EEAE91A93349100580087 /* Main-iPhone.storyboard */,
 				6D8E95A31A89153A006E4ED3 /* AppDelegate.h */,
 				6D8E95A41A89153A006E4ED3 /* AppDelegate.m */,
-				6D8E95A91A89153A006E4ED3 /* Main.storyboard */,
-				6D8E95AC1A89153A006E4ED3 /* Images.xcassets */,
-				6D8E95AE1A89153A006E4ED3 /* LaunchScreen.xib */,
-				6D8E959F1A89153A006E4ED3 /* Supporting Files */,
 				6DBBDF4E1A8938E6002E0240 /* MainViewController.h */,
 				6DBBDF4F1A8938E6002E0240 /* MainViewController.m */,
 				6DBBDF511A893AAF002E0240 /* MainMenuTableCell.h */,
 				6DBBDF521A893AAF002E0240 /* MainMenuTableCell.m */,
 				6D4D0DAE1A928D98008AE758 /* YouTubeViewController.h */,
 				6D4D0DAF1A928D98008AE758 /* YouTubeViewController.m */,
+				6D951ACF1A9486680040733E /* Assets */,
+				6D951ACE1A94864F0040733E /* Interface */,
+				6D8E959F1A89153A006E4ED3 /* Supporting Files */,
 			);
 			path = ios_youtube_browser;
 			sourceTree = "<group>";
@@ -114,6 +112,24 @@
 				6D8E95A11A89153A006E4ED3 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6D951ACE1A94864F0040733E /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				6D3EEAE91A93349100580087 /* Main-iPhone.storyboard */,
+				6D8E95A91A89153A006E4ED3 /* Main.storyboard */,
+				6D8E95AE1A89153A006E4ED3 /* LaunchScreen.xib */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
+		6D951ACF1A9486680040733E /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				6D8E95AC1A89153A006E4ED3 /* Images.xcassets */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
