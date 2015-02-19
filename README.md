@@ -28,7 +28,9 @@ Sample code for request using AFNetworking:
 static NSString * const YouTubeBaseUrl = @"https://www.googleapis.com/youtube/v3/search?part=snippet&q=%@&type=video&videoCaption=closedCaption&key=%@&maxResults=%@";
 static NSString * const YouTubeAppKey = @"AIzaSyCs0lcHGW2oW88FO8FeR8j_hXMc9oCG6p0";
 static const NSInteger YouTubeMaxResults = 50;
+
 ...
+
 NSString *str = [searchString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
 NSString *url = [NSString stringWithFormat:YouTubeBaseUrl, str, YouTubeAppKey, @(YouTubeMaxResults)];
 AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
