@@ -2,15 +2,15 @@
 
 This tutorial explains how to create simple <i>iOS</i> application which working with <i>YouTube API<i/>.
 
-First of all, you should create Google account, if you haven’t. Go to <a href="https://console.developers.google.com/project">Google Developers Console</a> and create the project.
+First of all, you should create <i>Google</i> account, if you haven’t. Go to <a href="https://console.developers.google.com/project">Google Developers Console</a> and create the project.
 
 ![alt tag](https://raw.github.com/maximbilan/ios_youtube_browser/master/img/img1.png)
 
-In created project, you will have lots of settings, statistics, something else. For your application we need to enable YouTube API.
+In created project, you will have lots of settings, statistics, something else. For your application we need to enable <i>YouTube API</i>.
 
 ![alt tag](https://raw.github.com/maximbilan/ios_youtube_browser/master/img/img2.png)
 
-Also you need to create iOS key by this <a href="https://code.google.com/apis/console/?noredirect">link</a> on the API access tab and ‘Create new iOS key’ button.
+Also you need to create <i>iOS</i> key by this <a href="https://code.google.com/apis/console/?noredirect">link</a> on the <i>API</i> access tab and ‘Create new iOS key’ button.
 
 ![alt tag](https://raw.github.com/maximbilan/ios_youtube_browser/master/img/img3.png)
 
@@ -18,7 +18,7 @@ Also you need to create iOS key by this <a href="https://code.google.com/apis/co
 
 Now all settings were set up.
 
-We have two question for our simple application. How to receive data from YouTube? And how to play YouTube videos in UIKit?
+We have two question for our simple application. How to receive data from <i>YouTube</i>? And how to play <i>YouTube</i> videos in <i>UIKit</i>?
 
 For receiving the data we will use the next <a href="https://developers.google.com/apis-explorer/#p/youtube/v3/youtube.search.list">request</a>. Google provides lots of information about API, you can found <a href="https://developers.google.com/youtube/v3/">here</a>. Full information about API, <a href="https://developers.google.com/youtube/v3/sample_requests">samples</a>, etc.
 
