@@ -22,7 +22,7 @@ We have two question for our simple application. How to receive data from <i>You
 
 For receiving the data we will use the next <a href="https://developers.google.com/apis-explorer/#p/youtube/v3/youtube.search.list">request</a>. Google provides lots of information about API, you can found <a href="https://developers.google.com/youtube/v3/">here</a>. Full information about API, <a href="https://developers.google.com/youtube/v3/sample_requests">samples</a>, etc.
 
-Sample code for request using AFNetworking:
+Sample code for request using <i>AFNetworking</i>:
 
 <pre>
 static NSString * const YouTubeBaseUrl = @"https://www.googleapis.com/youtube/v3/search?part=snippet&q=%@&type=video&videoCaption=closedCaption&key=%@&maxResults=%@";
