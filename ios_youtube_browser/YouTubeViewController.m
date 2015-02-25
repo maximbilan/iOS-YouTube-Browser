@@ -10,6 +10,8 @@
 
 #import "YTPlayerView.h"
 
+#define YTPLAYERVIEW_SHOW_INFO
+
 @interface YouTubeViewController ()
 
 @end
@@ -21,7 +23,11 @@
     [super viewDidLoad];
 	
 	if (self.videoId) {
+#ifdef YTPLAYERVIEW_SHOW_INFO
 		[self.playerView loadWithVideoId:self.videoId];
+#else
+		[self.playerView loadWithVideoId:self.videoId playerVars:@{ @"showinfo" : @(0) }];
+#endif
 	}
 }
 
