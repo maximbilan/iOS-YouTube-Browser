@@ -17,7 +17,7 @@
 #import <SDWebImage/UIImageView+WebCache.h>
 
 static NSString * const MainMenuTableCellId = @"MainMenuTableCellId";
-static NSString * const YouTubeBaseUrl = @"https://www.googleapis.com/youtube/v3/search?part=snippet&q=%@&type=video&videoCaption=closedCaption&key=%@&maxResults=%@";
+static NSString * const YouTubeSearchUrl = @"https://www.googleapis.com/youtube/v3/search?part=snippet&q=%@&type=video&videoCaption=closedCaption&key=%@&maxResults=%@";
 static NSString * const YouTubeAppKey = @"AIzaSyCs0lcHGW2oW88FO8FeR8j_hXMc9oCG6p0";
 static const NSInteger YouTubeMaxResults = 50;
 
@@ -44,7 +44,7 @@ static const NSInteger YouTubeMaxResults = 50;
 - (void)fetchYoutubeData:(NSString *)searchString
 {
 	NSString *str = [searchString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-	NSString *url = [NSString stringWithFormat:YouTubeBaseUrl, str, YouTubeAppKey, @(YouTubeMaxResults)];
+	NSString *url = [NSString stringWithFormat:YouTubeSearchUrl, str, YouTubeAppKey, @(YouTubeMaxResults)];
 	AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
 	[manager GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
 		NSLog(@"JSON: %@", responseObject);
