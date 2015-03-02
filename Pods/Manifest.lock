@@ -23,11 +23,13 @@ PODS:
   - SDWebImage (3.7.1):
     - SDWebImage/Core (= 3.7.1)
   - SDWebImage/Core (3.7.1)
+  - WaitSpinner (0.1.1)
   - youtube-ios-player-helper (0.1.1)
 
 DEPENDENCIES:
   - AFNetworking
   - SDWebImage
+  - WaitSpinner
   - youtube-ios-player-helper (from `https://github.com/maximbilan/youtube-ios-player-helper.git`, branch `develop`)
 
 EXTERNAL SOURCES:
@@ -43,6 +45,7 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   AFNetworking: 8bee59492a6ff15d69130efa4d0dc67e0094a52a
   SDWebImage: 116e88633b5b416ea0ca4b334a4ac59cf72dd38d
+  WaitSpinner: e362ac153248d01699a67faa25a6e6b817ce8f88
   youtube-ios-player-helper: 1fad794b7c6a0d00d98e77f7b98726fabfc6b209
 
 COCOAPODS: 0.35.0
