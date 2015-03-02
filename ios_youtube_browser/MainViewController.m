@@ -13,6 +13,7 @@
 
 #import "AFNetworking.h"
 #import "YTPlayerView.h"
+#import "WaitSpinner.h"
 
 #import <SDWebImage/UIImageView+WebCache.h>
 
@@ -25,6 +26,8 @@ static const NSInteger YouTubeMaxResults = 50;
 @interface MainViewController () <UITableViewDelegate, UITableViewDataSource>
 {
 	NSMutableArray *data;
+	
+	WaitSpinner *waitSpinner;
 }
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
