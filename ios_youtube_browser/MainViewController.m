@@ -42,6 +42,8 @@ static const NSInteger YouTubeMaxResults = 50;
 {
     [super viewDidLoad];
 	
+	waitSpinner = [[WaitSpinner alloc] init];
+	
 	data = [NSMutableArray array];
 }
 
@@ -63,8 +65,10 @@ static const NSInteger YouTubeMaxResults = 50;
 				}
 			}
 		}
+		[waitSpinner hide];
 	} failure:^(AFHTTPRequestOperation *operation, NSError *error) {
 		NSLog(@"Error: %@", error);
+		[waitSpinner hide];
 	}];
 }
 
@@ -180,6 +184,7 @@ static const NSInteger YouTubeMaxResults = 50;
 - (IBAction)searchAction:(UIButton *)sender
 {
 	if (self.searchTextField.text.length > 0) {
+		[waitSpinner showInView:self.view];
 		NSString *str = [self.searchTextField.text stringByReplacingOccurrencesOfString:@" " withString:@"+"];
 		[self fetchYoutubeData:str];
 	}
