@@ -221,9 +221,9 @@ static const NSInteger YouTubeMaxResults = 50;
 		if (ytChannel) {
 			cell.channelLabel.text = ytChannel;
 		}
-		if (ytPublishedAt) {
-			cell.dateLabel.text = ytPublishedAt;
-		}
+//		if (ytPublishedAt) {
+//			cell.dateLabel.text = ytPublishedAt;
+//		}
 		
 		[cell.thumbnailImageView sd_setImageWithURL:[NSURL URLWithString:ytMediumThumbnail]];
 	}
@@ -251,6 +251,10 @@ static const NSInteger YouTubeMaxResults = 50;
 					}
 				}
 			}
+		}
+		
+		if (ytViewCount) {
+			cell.viewCountLabel.text = ytViewCount;
 		}
 	}
 	

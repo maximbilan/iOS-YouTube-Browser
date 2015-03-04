@@ -92,7 +92,7 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lKZ-ct-7I4">
                                                     <rect key="frame" x="116" y="10" width="171" height="70"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEX-1z-fsS">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEX-1z-fsS" userLabel="ViewCount">
                                                             <rect key="frame" x="0.0" y="48" width="171" height="21"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="21" id="brC-Vt-W7f"/>
@@ -147,9 +147,9 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="channelLabel" destination="Iv6-6O-J1s" id="PzM-Rp-ngl"/>
-                                            <outlet property="dateLabel" destination="cEX-1z-fsS" id="OwI-Yk-zSj"/>
                                             <outlet property="thumbnailImageView" destination="9rY-VS-suH" id="qZt-aH-8UY"/>
                                             <outlet property="titleLabel" destination="PQo-4e-bbV" id="G72-Tv-Hma"/>
+                                            <outlet property="viewCountLabel" destination="cEX-1z-fsS" id="cci-iC-LXD"/>
                                             <segue destination="5Wp-gK-j44" kind="push" id="LqZ-d5-7hX"/>
                                         </connections>
                                     </tableViewCell>
