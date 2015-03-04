@@ -67,8 +67,7 @@ static const NSInteger YouTubeMaxResults = 50;
 				if (items) {
 					[data removeAllObjects];
 					[data addObjectsFromArray:items];
-					//[self.tableView reloadData];
-					
+
 					[self fetchYoutubeStats];
 				}
 			}
