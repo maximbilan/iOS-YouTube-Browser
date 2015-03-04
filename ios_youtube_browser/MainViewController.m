@@ -26,6 +26,7 @@ static const NSInteger YouTubeMaxResults = 50;
 @interface MainViewController () <UITableViewDelegate, UITableViewDataSource>
 {
 	NSMutableArray *data;
+	NSMutableArray *statsData;
 	
 	WaitSpinner *waitSpinner;
 }
@@ -45,6 +46,7 @@ static const NSInteger YouTubeMaxResults = 50;
 	waitSpinner = [[WaitSpinner alloc] init];
 	
 	data = [NSMutableArray array];
+	statsData = [NSMutableArray array];
 }
 
 - (void)fetchYoutubeData:(NSString *)searchString
@@ -61,7 +63,9 @@ static const NSInteger YouTubeMaxResults = 50;
 				if (items) {
 					[data removeAllObjects];
 					[data addObjectsFromArray:items];
-					[self.tableView reloadData];
+					//[self.tableView reloadData];
+					
+					[self fetchYoutubeStats];
 				}
 			}
 		}
@@ -70,6 +74,61 @@ static const NSInteger YouTubeMaxResults = 50;
 		NSLog(@"Error: %@", error);
 		[waitSpinner hide];
 	}];
+}
+
+- (void)fetchYoutubeStats
+{
+	[statsData removeAllObjects];
+	
+	[waitSpinner showInView:self.view];
+	
+	NSInteger dataCount = data.count;
+	__block NSInteger requestCount = 0;
+	
+	__weak MainViewController *controller = self;
+	void (^checkIsFinish)(void) = ^(void) {
+		if (requestCount == dataCount - 1) {
+			[waitSpinner hide];
+			[controller.tableView reloadData];
+		}
+		++requestCount;
+	};
+	
+	
+	for (NSDictionary *object in data) {
+		BOOL wasRequest = NO;
+		if (object) {
+			if ([object valueForKey:@"id"]) {
+				NSDictionary *idDict = [object valueForKey:@"id"];
+				if (idDict) {
+					if ([idDict valueForKey:@"videoId"]) {
+						NSString *videoId = idDict[@"videoId"];
+						if (videoId && videoId.length > 0) {
+							wasRequest = YES;
+							
+							NSString *url = [NSString stringWithFormat:YouTubeStatsUrl, videoId, YouTubeAppKey];
+							AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+							[manager GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+								NSLog(@"JSON: %@", responseObject);
+								NSDictionary *responseDict = (NSDictionary *)responseObject;
+								if (responseDict) {
+									[statsData addObject:responseDict];
+								}
+								checkIsFinish();
+							} failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+								NSLog(@"Error: %@", error);
+								checkIsFinish();
+							}];
+						}
+					}
+				}
+			}
+		}
+		
+		if (!wasRequest) {
+			checkIsFinish();
+		}
+	}
 }
 
 #pragma mark - UITableViewDataSource
