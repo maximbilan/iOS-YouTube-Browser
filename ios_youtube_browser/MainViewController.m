@@ -17,6 +17,8 @@
 
 #import <SDWebImage/UIImageView+WebCache.h>
 
+//#define ENABLE_LOG 1
+
 static NSString * const MainMenuTableCellId = @"MainMenuTableCellId";
 static NSString * const YouTubeSearchUrl = @"https://www.googleapis.com/youtube/v3/search?part=snippet&q=%@&type=video&videoCaption=closedCaption&key=%@&maxResults=%@";
 static NSString * const YouTubeStatsUrl = @"https://www.googleapis.com/youtube/v3/videos?id=%@&part=statistics&key=%@";
@@ -55,7 +57,9 @@ static const NSInteger YouTubeMaxResults = 50;
 	NSString *url = [NSString stringWithFormat:YouTubeSearchUrl, str, YouTubeAppKey, @(YouTubeMaxResults)];
 	AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
 	[manager GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+#ifdef ENABLE_LOG
 		NSLog(@"JSON: %@", responseObject);
+#endif
 		NSDictionary *d = (NSDictionary *)responseObject;
 		if (d) {
 			if ([d valueForKey:@"items"]) {
@@ -71,7 +75,9 @@ static const NSInteger YouTubeMaxResults = 50;
 		}
 		[waitSpinner hide];
 	} failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+#ifdef ENABLE_LOG
 		NSLog(@"Error: %@", error);
+#endif
 		[waitSpinner hide];
 	}];
 }
@@ -109,14 +115,18 @@ static const NSInteger YouTubeMaxResults = 50;
 							NSString *url = [NSString stringWithFormat:YouTubeStatsUrl, videoId, YouTubeAppKey];
 							AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
 							[manager GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+#ifdef ENABLE_LOG
 								NSLog(@"JSON: %@", responseObject);
+#endif
 								NSDictionary *responseDict = (NSDictionary *)responseObject;
 								if (responseDict) {
 									[statsData addObject:responseDict];
 								}
 								checkIsFinish();
 							} failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+#ifdef ENABLE_LOG
 								NSLog(@"Error: %@", error);
+#endif
 								checkIsFinish();
 							}];
 						}
