@@ -228,6 +228,32 @@ static const NSInteger YouTubeMaxResults = 50;
 		[cell.thumbnailImageView sd_setImageWithURL:[NSURL URLWithString:ytMediumThumbnail]];
 	}
 	
+	NSString *ytViewCount = nil;
+	NSString *ytLikeCount = nil;
+	
+	NSDictionary *objectStats = statsData[indexPath.row];
+	if (objectStats) {
+		if ([objectStats objectForKey:@"items"]) {
+			NSArray *items = (NSArray *)[objectStats valueForKey:@"items"];
+			if (items && items.count > 0) {
+				NSDictionary *item = [items objectAtIndex:0];
+				if (item) {
+					if ([item objectForKey:@"statistics"]) {
+						NSDictionary *stats = [item valueForKey:@"statistics"];
+						if ([stats objectForKey:@"viewCount"]) {
+							NSInteger viewCount = [[stats valueForKey:@"viewCount"] integerValue];
+							ytViewCount = [NSString stringWithFormat:@"%d views", viewCount];
+						}
+						if ([stats objectForKey:@"likeCount"]) {
+							NSInteger likeCount = [[stats valueForKey:@"likeCount"] integerValue];
+							ytLikeCount = [NSString stringWithFormat:@"%d likes", likeCount];
+						}
+					}
+				}
+			}
+		}
+	}
+	
 	return cell;
 }
 
