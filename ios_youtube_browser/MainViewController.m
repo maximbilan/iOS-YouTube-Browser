@@ -242,18 +242,18 @@ static const NSInteger YouTubeMaxResults = 50;
 	
 	NSDictionary *objectStats = statsData[indexPath.row];
 	if (objectStats) {
-		if ([objectStats objectForKey:@"items"]) {
+		if (objectStats[@"items"]) {
 			NSArray *items = (NSArray *)[objectStats valueForKey:@"items"];
 			if (items && items.count > 0) {
-				NSDictionary *item = [items objectAtIndex:0];
+				NSDictionary *item = items[0];
 				if (item) {
-					if ([item objectForKey:@"statistics"]) {
+					if (item[@"statistics"]) {
 						NSDictionary *stats = [item valueForKey:@"statistics"];
-						if ([stats objectForKey:@"viewCount"]) {
+						if (stats[@"viewCount"]) {
 							NSInteger viewCount = [[stats valueForKey:@"viewCount"] integerValue];
 							ytViewCount = [NSString stringWithFormat:@"%d views", viewCount];
 						}
-						if ([stats objectForKey:@"likeCount"]) {
+						if (stats[@"likeCount"]) {
 							NSInteger likeCount = [[stats valueForKey:@"likeCount"] integerValue];
 							ytLikeCount = [NSString stringWithFormat:@"%d likes", likeCount];
 						}
