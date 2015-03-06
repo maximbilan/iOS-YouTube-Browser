@@ -14,6 +14,8 @@
 
 @interface YouTubeViewController ()
 
+@property (weak, nonatomic) IBOutlet YTPlayerView *playerView;
+
 @end
 
 @implementation YouTubeViewController

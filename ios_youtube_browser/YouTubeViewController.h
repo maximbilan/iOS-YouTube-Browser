@@ -8,11 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@class YTPlayerView;
-
 @interface YouTubeViewController : UIViewController
-
-@property (weak, nonatomic) IBOutlet YTPlayerView *playerView;
 
 @property (nonatomic, strong) NSString *videoId;
 
