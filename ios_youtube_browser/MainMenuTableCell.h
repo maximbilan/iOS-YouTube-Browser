@@ -18,6 +18,4 @@
 @property (weak, nonatomic) IBOutlet UILabel *channelLabel;
 @property (weak, nonatomic) IBOutlet UILabel *viewCountLabel;
 
-@property (weak, nonatomic) IBOutlet YTPlayerView *videoView;
-
 @end
