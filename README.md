@@ -1,6 +1,6 @@
 # iOS YouTube Browser Sample
 
-This tutorial explains how to create simple <i>iOS</i> application which working with <i>YouTube API<i/>.
+This tutorial explains how to create simple <i>iOS</i> application which working with <i>YouTube API</i>.
 
 First of all, you should create <i>Google</i> account, if you haven’t. Go to <a href="https://console.developers.google.com/project">Google Developers Console</a> and create the project.
 
