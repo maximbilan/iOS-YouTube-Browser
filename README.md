@@ -41,8 +41,6 @@ AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager]
 }];
 </pre>
 
-Here not comfortable for reading the code, see <a href="https://github.com/maximbilan/ios_youtube_browser/blob/master/ios_youtube_browser/MainViewController.m">here</a>.
-
 And second question. For this you can use the <a href="https://github.com/youtube/youtube-ios-player-helper">YouTube Player</a>. It’s great control. And really simple usage:
 
 <pre>
