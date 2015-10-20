@@ -17,10 +17,12 @@
 
 #import <SDWebImage/UIImageView+WebCache.h>
 
-//#define ENABLE_LOG 1
+#define ENABLE_LOG 1
+#define SEARCH_BY_ID 1
 
 static NSString * const MainMenuTableCellId = @"MainMenuTableCellId";
 static NSString * const YouTubeSearchUrl = @"https://www.googleapis.com/youtube/v3/search?part=snippet&q=%@&type=video&videoCaption=closedCaption&key=%@&maxResults=%@";
+static NSString * const YouTubeSearchByIDUrl = @"https://www.googleapis.com/youtube/v3/videos?part=snippet&id=%@&key=%@&maxResults=%@";
 static NSString * const YouTubeStatsUrl = @"https://www.googleapis.com/youtube/v3/videos?id=%@&part=statistics&key=%@";
 static NSString * const YouTubeAppKey = @"AIzaSyCs0lcHGW2oW88FO8FeR8j_hXMc9oCG6p0";
 static const NSInteger YouTubeMaxResults = 50;
@@ -49,12 +51,30 @@ static const NSInteger YouTubeMaxResults = 50;
 	
 	data = [NSMutableArray array];
 	statsData = [NSMutableArray array];
+	
+	NSString *url = @"https://www.youtube.com/watch?v=wD7H4RVDcpo";
+	NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"(?<=v(=|/))([-a-zA-Z0-9_]+)|(?<=youtu.be/)([-a-zA-Z0-9_]+)"
+																		   options:NSRegularExpressionCaseInsensitive
+																			 error:nil];
+	NSTextCheckingResult *match = [regex firstMatchInString:url
+													options:0
+													  range:NSMakeRange(0, [url length])];
+	NSRange range = [match rangeAtIndex:0];
+	NSString *youTubeID = [url substringWithRange:range];
+	NSLog(@"videoid %@", youTubeID);
+	
 }
 
 - (void)fetchYoutubeData:(NSString *)searchString
 {
 	NSString *str = [searchString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+	
+#ifdef SEARCH_BY_ID
+	NSString *url = [NSString stringWithFormat:YouTubeSearchByIDUrl, @"ZGNvt_L_cag", YouTubeAppKey, @(YouTubeMaxResults)];
+#else
 	NSString *url = [NSString stringWithFormat:YouTubeSearchUrl, str, YouTubeAppKey, @(YouTubeMaxResults)];
+#endif
+	
 	AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
 	[manager GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
 #ifdef ENABLE_LOG
@@ -103,6 +123,8 @@ static const NSInteger YouTubeMaxResults = 50;
 	for (NSDictionary *object in data) {
 		BOOL wasRequest = NO;
 		if (object) {
+			
+#ifndef SEARCH_BY_ID
 			if ([object valueForKey:@"id"]) {
 				NSDictionary *idDict = [object valueForKey:@"id"];
 				if (idDict) {
@@ -132,6 +154,30 @@ static const NSInteger YouTubeMaxResults = 50;
 					}
 				}
 			}
+#else
+			NSString *videoId = @"ZGNvt_L_cag";
+			if (videoId && videoId.length > 0) {
+				wasRequest = YES;
+				
+				NSString *url = [NSString stringWithFormat:YouTubeStatsUrl, videoId, YouTubeAppKey];
+				AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+				[manager GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+#ifdef ENABLE_LOG
+					NSLog(@"JSON: %@", responseObject);
+#endif
+					NSDictionary *responseDict = (NSDictionary *)responseObject;
+					if (responseDict) {
+						[statsData addObject:responseDict];
+					}
+					checkIsFinish();
+				} failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+#ifdef ENABLE_LOG
+					NSLog(@"Error: %@", error);
+#endif
+					checkIsFinish();
+				}];
+			}
+#endif
 		}
 		
 		if (!wasRequest) {
@@ -163,6 +209,7 @@ static const NSInteger YouTubeMaxResults = 50;
 	
 	NSDictionary *object = data[indexPath.row];
 	if (object) {
+#ifndef SEARCH_BY_ID
 		if ([object valueForKey:@"id"]) {
 			NSDictionary *idDict = [object valueForKey:@"id"];
 			if (idDict) {
@@ -174,6 +221,9 @@ static const NSInteger YouTubeMaxResults = 50;
 				}
 			}
 		}
+#else
+		ytVideoId = @"ZGNvt_L_cag";
+#endif
 		if ([object valueForKey:@"snippet"]) {
 			NSDictionary *snippet = [object valueForKey:@"snippet"];
 			if (snippet) {
@@ -301,6 +351,7 @@ static const NSInteger YouTubeMaxResults = 50;
 	NSString *ytTitle = nil;
 	NSDictionary *object = data[indexPath.row];
 	if (object) {
+#ifndef SEARCH_BY_ID
 		if ([object valueForKey:@"id"]) {
 			NSDictionary *idDict = [object valueForKey:@"id"];
 			if (idDict) {
@@ -312,6 +363,9 @@ static const NSInteger YouTubeMaxResults = 50;
 				}
 			}
 		}
+#else
+		ytVideoId = @"ZGNvt_L_cag";
+#endif
 		
 		if ([object valueForKey:@"snippet"]) {
 			NSDictionary *snippet = [object valueForKey:@"snippet"];
