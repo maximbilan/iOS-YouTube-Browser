@@ -17,8 +17,9 @@
 
 #import <SDWebImage/UIImageView+WebCache.h>
 
+#import "NSString+ValidURL.h"
+
 #define ENABLE_LOG 1
-#define SEARCH_BY_ID 1
 
 static NSString * const MainMenuTableCellId = @"MainMenuTableCellId";
 static NSString * const YouTubeSearchUrl = @"https://www.googleapis.com/youtube/v3/search?part=snippet&q=%@&type=video&videoCaption=closedCaption&key=%@&maxResults=%@";
@@ -31,6 +32,8 @@ static const NSInteger YouTubeMaxResults = 50;
 {
 	NSMutableArray *data;
 	NSMutableArray *statsData;
+	BOOL isSearchVideoId;
+	NSString *searchVideoId;
 	
 	WaitSpinner *waitSpinner;
 }
@@ -51,29 +54,12 @@ static const NSInteger YouTubeMaxResults = 50;
 	
 	data = [NSMutableArray array];
 	statsData = [NSMutableArray array];
-	
-	NSString *url = @"https://www.youtube.com/watch?v=wD7H4RVDcpo";
-	NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"(?<=v(=|/))([-a-zA-Z0-9_]+)|(?<=youtu.be/)([-a-zA-Z0-9_]+)"
-																		   options:NSRegularExpressionCaseInsensitive
-																			 error:nil];
-	NSTextCheckingResult *match = [regex firstMatchInString:url
-													options:0
-													  range:NSMakeRange(0, [url length])];
-	NSRange range = [match rangeAtIndex:0];
-	NSString *youTubeID = [url substringWithRange:range];
-	NSLog(@"videoid %@", youTubeID);
-	
 }
 
 - (void)fetchYoutubeData:(NSString *)searchString
 {
 	NSString *str = [searchString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-	
-#ifdef SEARCH_BY_ID
-	NSString *url = [NSString stringWithFormat:YouTubeSearchByIDUrl, @"ZGNvt_L_cag", YouTubeAppKey, @(YouTubeMaxResults)];
-#else
-	NSString *url = [NSString stringWithFormat:YouTubeSearchUrl, str, YouTubeAppKey, @(YouTubeMaxResults)];
-#endif
+	NSString *url = [NSString stringWithFormat:isSearchVideoId ? YouTubeSearchByIDUrl : YouTubeSearchUrl, str, YouTubeAppKey, @(YouTubeMaxResults)];
 	
 	AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
 	[manager GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
@@ -124,60 +110,60 @@ static const NSInteger YouTubeMaxResults = 50;
 		BOOL wasRequest = NO;
 		if (object) {
 			
-#ifndef SEARCH_BY_ID
-			if ([object valueForKey:@"id"]) {
-				NSDictionary *idDict = [object valueForKey:@"id"];
-				if (idDict) {
-					if ([idDict valueForKey:@"videoId"]) {
-						NSString *videoId = idDict[@"videoId"];
-						if (videoId && videoId.length > 0) {
-							wasRequest = YES;
-							
-							NSString *url = [NSString stringWithFormat:YouTubeStatsUrl, videoId, YouTubeAppKey];
-							AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-							[manager GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+			if (!isSearchVideoId) {
+				if ([object valueForKey:@"id"]) {
+					NSDictionary *idDict = [object valueForKey:@"id"];
+					if (idDict) {
+						if ([idDict valueForKey:@"videoId"]) {
+							NSString *videoId = idDict[@"videoId"];
+							if (videoId && videoId.length > 0) {
+								wasRequest = YES;
+								
+								NSString *url = [NSString stringWithFormat:YouTubeStatsUrl, videoId, YouTubeAppKey];
+								AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+								[manager GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
 #ifdef ENABLE_LOG
-								NSLog(@"JSON: %@", responseObject);
+									NSLog(@"JSON: %@", responseObject);
 #endif
-								NSDictionary *responseDict = (NSDictionary *)responseObject;
-								if (responseDict) {
-									[statsData addObject:responseDict];
-								}
-								checkIsFinish();
-							} failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+									NSDictionary *responseDict = (NSDictionary *)responseObject;
+									if (responseDict) {
+										[statsData addObject:responseDict];
+									}
+									checkIsFinish();
+								} failure:^(AFHTTPRequestOperation *operation, NSError *error) {
 #ifdef ENABLE_LOG
-								NSLog(@"Error: %@", error);
+									NSLog(@"Error: %@", error);
 #endif
-								checkIsFinish();
-							}];
+									checkIsFinish();
+								}];
+							}
 						}
 					}
 				}
 			}
-#else
-			NSString *videoId = @"ZGNvt_L_cag";
-			if (videoId && videoId.length > 0) {
-				wasRequest = YES;
-				
-				NSString *url = [NSString stringWithFormat:YouTubeStatsUrl, videoId, YouTubeAppKey];
-				AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-				[manager GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+			else {
+				if (searchVideoId && searchVideoId.length > 0) {
+					wasRequest = YES;
+					
+					NSString *url = [NSString stringWithFormat:YouTubeStatsUrl, searchVideoId, YouTubeAppKey];
+					AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+					[manager GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
 #ifdef ENABLE_LOG
-					NSLog(@"JSON: %@", responseObject);
+						NSLog(@"JSON: %@", responseObject);
 #endif
-					NSDictionary *responseDict = (NSDictionary *)responseObject;
-					if (responseDict) {
-						[statsData addObject:responseDict];
-					}
-					checkIsFinish();
-				} failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+						NSDictionary *responseDict = (NSDictionary *)responseObject;
+						if (responseDict) {
+							[statsData addObject:responseDict];
+						}
+						checkIsFinish();
+					} failure:^(AFHTTPRequestOperation *operation, NSError *error) {
 #ifdef ENABLE_LOG
-					NSLog(@"Error: %@", error);
+						NSLog(@"Error: %@", error);
 #endif
-					checkIsFinish();
-				}];
+						checkIsFinish();
+					}];
+				}
 			}
-#endif
 		}
 		
 		if (!wasRequest) {
@@ -209,21 +195,24 @@ static const NSInteger YouTubeMaxResults = 50;
 	
 	NSDictionary *object = data[indexPath.row];
 	if (object) {
-#ifndef SEARCH_BY_ID
-		if ([object valueForKey:@"id"]) {
-			NSDictionary *idDict = [object valueForKey:@"id"];
-			if (idDict) {
-				if ([idDict valueForKey:@"videoId"]) {
-					NSString *videoId = idDict[@"videoId"];
-					if (videoId && videoId.length > 0) {
-						ytVideoId = videoId;
+		
+		if (isSearchVideoId) {
+			ytVideoId = searchVideoId;
+		}
+		else {
+			if ([object valueForKey:@"id"]) {
+				NSDictionary *idDict = [object valueForKey:@"id"];
+				if (idDict) {
+					if ([idDict valueForKey:@"videoId"]) {
+						NSString *videoId = idDict[@"videoId"];
+						if (videoId && videoId.length > 0) {
+							ytVideoId = videoId;
+						}
 					}
 				}
 			}
 		}
-#else
-		ytVideoId = @"ZGNvt_L_cag";
-#endif
+		
 		if ([object valueForKey:@"snippet"]) {
 			NSDictionary *snippet = [object valueForKey:@"snippet"];
 			if (snippet) {
@@ -334,10 +323,27 @@ static const NSInteger YouTubeMaxResults = 50;
 	if (self.searchTextField.text.length > 0) {
 		[waitSpinner showInView:self.view];
 		NSString *str = [self.searchTextField.text stringByReplacingOccurrencesOfString:@" " withString:@"+"];
+		
+		isSearchVideoId = NO;
+		if ([str isValidURL]) {
+			
+			NSString *url = str;
+			NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"(?<=v(=|/))([-a-zA-Z0-9_]+)|(?<=youtu.be/)([-a-zA-Z0-9_]+)"
+																				   options:NSRegularExpressionCaseInsensitive
+																					 error:nil];
+			NSTextCheckingResult *match = [regex firstMatchInString:url
+															options:0
+															  range:NSMakeRange(0, [url length])];
+			NSRange range = [match rangeAtIndex:0];
+			str = [url substringWithRange:range];
+			
+			isSearchVideoId = YES;
+			searchVideoId = str;
+		}
+		
 		[self fetchYoutubeData:str];
 	}
 }
-
 
 #pragma mark - Navigation
 
@@ -351,21 +357,23 @@ static const NSInteger YouTubeMaxResults = 50;
 	NSString *ytTitle = nil;
 	NSDictionary *object = data[indexPath.row];
 	if (object) {
-#ifndef SEARCH_BY_ID
-		if ([object valueForKey:@"id"]) {
-			NSDictionary *idDict = [object valueForKey:@"id"];
-			if (idDict) {
-				if ([idDict valueForKey:@"videoId"]) {
-					NSString *videoId = idDict[@"videoId"];
-					if (videoId && videoId.length > 0) {
-						ytVideoId = videoId;
+	
+		if (isSearchVideoId) {
+			ytVideoId = searchVideoId;
+		}
+		else {
+			if ([object valueForKey:@"id"]) {
+				NSDictionary *idDict = [object valueForKey:@"id"];
+				if (idDict) {
+					if ([idDict valueForKey:@"videoId"]) {
+						NSString *videoId = idDict[@"videoId"];
+						if (videoId && videoId.length > 0) {
+							ytVideoId = videoId;
+						}
 					}
 				}
 			}
 		}
-#else
-		ytVideoId = @"ZGNvt_L_cag";
-#endif
 		
 		if ([object valueForKey:@"snippet"]) {
 			NSDictionary *snippet = [object valueForKey:@"snippet"];
