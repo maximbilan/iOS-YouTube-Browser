@@ -47,7 +47,7 @@ And second question. For this you can use the <a href="https://github.com/youtub
 [self.playerView loadWithVideoId:@"M7lc1UVf-VE"];
 </pre>
 
-I think it doesn’t make sense to explain the details, just go to <a href="https://github.com/maximbilan/ios_youtube_browser">github</a> and will use the sample ☺
+I think it doesn’t make sense to explain the details, just download the repository and use the sample ☺
 
 ![alt tag](https://raw.github.com/maximbilan/ios_youtube_browser/master/img/img5.png)
 
