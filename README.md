@@ -10,7 +10,7 @@ In created project, you will have lots of settings, statistics, something else. 
 
 ![alt tag](https://raw.github.com/maximbilan/ios_youtube_browser/master/img/img2.png)
 
-Also you need to create <i>iOS</i> key by this <a href="https://code.google.com/apis/console/?noredirect">link</a> on the <i>API</i> access tab and ‘Create new iOS key’ button.
+Also you need to create <i>iOS</i> key by this <a href="https://code.google.com/apis/console/?noredirect">link</a> on the <i>API</i> access tab and <i>Create new iOS key</i> button.
 
 ![alt tag](https://raw.github.com/maximbilan/ios_youtube_browser/master/img/img3.png)
 
