@@ -17,11 +17,10 @@
 		6DBBDF501A8938E6002E0240 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBBDF4F1A8938E6002E0240 /* MainViewController.m */; };
 		6DBBDF531A893AAF002E0240 /* MainMenuTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBBDF521A893AAF002E0240 /* MainMenuTableCell.m */; };
 		6DD061DD1BD67FDB00617FDF /* NSString+ValidURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD061DC1BD67FDB00617FDF /* NSString+ValidURL.m */; };
-		FEB80397E31CA32DB5DB3928 /* libPods-ios_youtube_browser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 084F6122162AEB06C1029D1F /* libPods-ios_youtube_browser.a */; };
+		ECEA1415147C15F4D0016445 /* Pods_ios_youtube_browser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B195C3A806D2468A3045343E /* Pods_ios_youtube_browser.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		084F6122162AEB06C1029D1F /* libPods-ios_youtube_browser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ios_youtube_browser.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D75443BFA7D7DFFDE8E3800 /* Pods-ios_youtube_browser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios_youtube_browser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios_youtube_browser/Pods-ios_youtube_browser.debug.xcconfig"; sourceTree = "<group>"; };
 		6D3EEAEA1A93349100580087 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Main-iPhone.storyboard"; sourceTree = "<group>"; };
 		6D4D0DAE1A928D98008AE758 /* YouTubeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouTubeViewController.h; sourceTree = "<group>"; };
@@ -40,6 +39,7 @@
 		6DBBDF521A893AAF002E0240 /* MainMenuTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuTableCell.m; sourceTree = "<group>"; };
 		6DD061DB1BD67FDB00617FDF /* NSString+ValidURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ValidURL.h"; sourceTree = "<group>"; };
 		6DD061DC1BD67FDB00617FDF /* NSString+ValidURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ValidURL.m"; sourceTree = "<group>"; };
+		B195C3A806D2468A3045343E /* Pods_ios_youtube_browser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_youtube_browser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D79AB6DE48491E7DE00A89CC /* Pods-ios_youtube_browser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios_youtube_browser.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios_youtube_browser/Pods-ios_youtube_browser.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -48,7 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEB80397E31CA32DB5DB3928 /* libPods-ios_youtube_browser.a in Frameworks */,
+				ECEA1415147C15F4D0016445 /* Pods_ios_youtube_browser.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,7 +67,7 @@
 		38E2C37BB33AF2F6A6D9FDD3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				084F6122162AEB06C1029D1F /* libPods-ios_youtube_browser.a */,
+				B195C3A806D2468A3045343E /* Pods_ios_youtube_browser.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -213,9 +213,18 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ios_youtube_browser/Pods-ios_youtube_browser-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/WaitSpinner/WaitSpinner.framework",
+				"${BUILT_PRODUCTS_DIR}/youtube-ios-player-helper/youtube_ios_player_helper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WaitSpinner.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/youtube_ios_player_helper.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
