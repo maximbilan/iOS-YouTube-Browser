@@ -2,7 +2,9 @@ platform :ios, '7.0'
 
 inhibit_all_warnings!
 
-pod 'AFNetworking'
-pod 'youtube-ios-player-helper', :git => 'https://github.com/maximbilan/youtube-ios-player-helper.git', :branch => 'develop'
-pod 'SDWebImage'
-pod 'WaitSpinner'
+target "ios_youtube_browser" do
+    pod 'AFNetworking'
+    pod 'youtube-ios-player-helper'
+    pod 'SDWebImage'
+    pod 'WaitSpinner'
+end

@@ -1,52 +1,37 @@
 PODS:
-  - AFNetworking (2.6.0):
-    - AFNetworking/NSURLConnection (= 2.6.0)
-    - AFNetworking/NSURLSession (= 2.6.0)
-    - AFNetworking/Reachability (= 2.6.0)
-    - AFNetworking/Security (= 2.6.0)
-    - AFNetworking/Serialization (= 2.6.0)
-    - AFNetworking/UIKit (= 2.6.0)
-  - AFNetworking/NSURLConnection (2.6.0):
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/NSURLSession (2.6.0):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/Reachability (2.6.0)
-  - AFNetworking/Security (2.6.0)
-  - AFNetworking/Serialization (2.6.0)
-  - AFNetworking/UIKit (2.6.0):
-    - AFNetworking/NSURLConnection
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - SDWebImage (3.7.3):
-    - SDWebImage/Core (= 3.7.3)
-  - SDWebImage/Core (3.7.3)
+  - SDWebImage (4.1.0):
+    - SDWebImage/Core (= 4.1.0)
+  - SDWebImage/Core (4.1.0)
   - WaitSpinner (0.1.1)
-  - youtube-ios-player-helper (0.1.1)
+  - youtube-ios-player-helper (0.1.6)
 
 DEPENDENCIES:
   - AFNetworking
   - SDWebImage
   - WaitSpinner
-  - youtube-ios-player-helper (from `https://github.com/maximbilan/youtube-ios-player-helper.git`,
-    branch `develop`)
-
-EXTERNAL SOURCES:
-  youtube-ios-player-helper:
-    :branch: develop
-    :git: https://github.com/maximbilan/youtube-ios-player-helper.git
-
-CHECKOUT OPTIONS:
-  youtube-ios-player-helper:
-    :commit: 8e922073f7af32983b71e8fecab2c8e4f0edec45
-    :git: https://github.com/maximbilan/youtube-ios-player-helper.git
+  - youtube-ios-player-helper
 
 SPEC CHECKSUMS:
-  AFNetworking: 79f7eb1a0fcfa7beb409332b2ca49afe9ce53b05
-  SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  SDWebImage: 0e435c14e402a6730315a0fb79f95e68654d55a4
   WaitSpinner: 61e2629a25e5e43b44d331daddaa3926bc7858cc
-  youtube-ios-player-helper: 4165738dac5abe229934c2c4857c8d3f183a7175
+  youtube-ios-player-helper: 21ab92db027c7ff86cb17a3843a3f6eafc8158d2
 
-COCOAPODS: 0.38.2
+PODFILE CHECKSUM: 71ed767a8ff6c2a10e9c2e43243ed6594b7d859a
+
+COCOAPODS: 1.3.1
