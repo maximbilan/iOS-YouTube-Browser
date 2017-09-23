@@ -61,8 +61,10 @@ static const NSInteger YouTubeMaxResults = 50;
 	NSString *str = [searchString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
 	NSString *url = [NSString stringWithFormat:isSearchVideoId ? YouTubeSearchByIDUrl : YouTubeSearchUrl, str, YouTubeAppKey, @(YouTubeMaxResults)];
 	
-	AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-	[manager GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+	AFHTTPSessionManager *sessionManager = [AFHTTPSessionManager manager];
+	[sessionManager GET:url parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
+		
+	} success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
 #ifdef ENABLE_LOG
 		NSLog(@"JSON: %@", responseObject);
 #endif
@@ -73,13 +75,13 @@ static const NSInteger YouTubeMaxResults = 50;
 				if (items) {
 					[data removeAllObjects];
 					[data addObjectsFromArray:items];
-
+					
 					[self fetchYoutubeStats];
 				}
 			}
 		}
 		[waitSpinner hide];
-	} failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+	} failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
 #ifdef ENABLE_LOG
 		NSLog(@"Error: %@", error);
 #endif
@@ -120,8 +122,9 @@ static const NSInteger YouTubeMaxResults = 50;
 								wasRequest = YES;
 								
 								NSString *url = [NSString stringWithFormat:YouTubeStatsUrl, videoId, YouTubeAppKey];
-								AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-								[manager GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+								AFHTTPSessionManager *sessionManager = [AFHTTPSessionManager manager];
+								[sessionManager GET:url parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
+								} success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
 #ifdef ENABLE_LOG
 									NSLog(@"JSON: %@", responseObject);
 #endif
@@ -130,7 +133,7 @@ static const NSInteger YouTubeMaxResults = 50;
 										[statsData addObject:responseDict];
 									}
 									checkIsFinish();
-								} failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+								} failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
 #ifdef ENABLE_LOG
 									NSLog(@"Error: %@", error);
 #endif
@@ -146,8 +149,10 @@ static const NSInteger YouTubeMaxResults = 50;
 					wasRequest = YES;
 					
 					NSString *url = [NSString stringWithFormat:YouTubeStatsUrl, searchVideoId, YouTubeAppKey];
-					AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-					[manager GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+					AFHTTPSessionManager *sessionManager = [AFHTTPSessionManager manager];
+					[sessionManager GET:url parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
+						
+					} success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
 #ifdef ENABLE_LOG
 						NSLog(@"JSON: %@", responseObject);
 #endif
@@ -156,7 +161,7 @@ static const NSInteger YouTubeMaxResults = 50;
 							[statsData addObject:responseDict];
 						}
 						checkIsFinish();
-					} failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+					} failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
 #ifdef ENABLE_LOG
 						NSLog(@"Error: %@", error);
 #endif
