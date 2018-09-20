@@ -30,14 +30,13 @@ static const NSInteger YouTubeMaxResults = 50;
 
 @interface MainViewController () <UITableViewDelegate, UITableViewDataSource>
 {
-	NSMutableArray *data;
-	NSMutableArray *statsData;
 	BOOL isSearchVideoId;
 	NSString *searchVideoId;
-	
-	WaitSpinner *waitSpinner;
 }
 
+@property (strong, nonatomic) NSMutableArray *data;
+@property (strong, nonatomic) NSMutableArray *statsData;
+@property (strong, nonatomic) WaitSpinner *waitSpinner;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UITextField *searchTextField;
 @property (weak, nonatomic) IBOutlet UIButton *searchButton;
@@ -50,14 +49,16 @@ static const NSInteger YouTubeMaxResults = 50;
 {
     [super viewDidLoad];
 	
-	waitSpinner = [[WaitSpinner alloc] init];
+	self.waitSpinner = [[WaitSpinner alloc] init];
 	
-	data = [NSMutableArray array];
-	statsData = [NSMutableArray array];
+	self.data = [NSMutableArray array];
+	self.statsData = [NSMutableArray array];
 }
 
 - (void)fetchYoutubeData:(NSString *)searchString
 {
+	__weak MainViewController *weakSelf = self;
+	
 	NSString *str = [searchString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
 	NSString *url = [NSString stringWithFormat:isSearchVideoId ? YouTubeSearchByIDUrl : YouTubeSearchUrl, str, YouTubeAppKey, @(YouTubeMaxResults)];
 	
@@ -73,42 +74,42 @@ static const NSInteger YouTubeMaxResults = 50;
 			if ([d valueForKey:@"items"]) {
 				NSArray *items = d[@"items"];
 				if (items) {
-					[data removeAllObjects];
-					[data addObjectsFromArray:items];
+					[weakSelf.data removeAllObjects];
+					[weakSelf.data addObjectsFromArray:items];
 					
-					[self fetchYoutubeStats];
+					[weakSelf fetchYoutubeStats];
 				}
 			}
 		}
-		[waitSpinner hide];
+		[weakSelf.waitSpinner hide];
 	} failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
 #ifdef ENABLE_LOG
 		NSLog(@"Error: %@", error);
 #endif
-		[waitSpinner hide];
+		[weakSelf.waitSpinner hide];
 	}];
 }
 
 - (void)fetchYoutubeStats
 {
-	[statsData removeAllObjects];
+	[self.statsData removeAllObjects];
 	
-	[waitSpinner showInView:self.view];
+	[self.waitSpinner showInView:self.view];
 	
-	NSInteger dataCount = data.count;
+	NSInteger dataCount = self.data.count;
 	__block NSInteger requestCount = 0;
 	
 	__weak MainViewController *controller = self;
 	void (^checkIsFinish)(void) = ^(void) {
 		if (requestCount == dataCount - 1) {
-			[waitSpinner hide];
+			[controller.waitSpinner hide];
 			[controller.tableView reloadData];
 		}
 		++requestCount;
 	};
 	
 	
-	for (NSDictionary *object in data) {
+	for (NSDictionary *object in self.data) {
 		BOOL wasRequest = NO;
 		if (object) {
 			
@@ -130,7 +131,7 @@ static const NSInteger YouTubeMaxResults = 50;
 #endif
 									NSDictionary *responseDict = (NSDictionary *)responseObject;
 									if (responseDict) {
-										[statsData addObject:responseDict];
+										[controller.statsData addObject:responseDict];
 									}
 									checkIsFinish();
 								} failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
@@ -158,7 +159,7 @@ static const NSInteger YouTubeMaxResults = 50;
 #endif
 						NSDictionary *responseDict = (NSDictionary *)responseObject;
 						if (responseDict) {
-							[statsData addObject:responseDict];
+							[controller.statsData addObject:responseDict];
 						}
 						checkIsFinish();
 					} failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
@@ -181,7 +182,7 @@ static const NSInteger YouTubeMaxResults = 50;
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-	return data.count;
+	return self.data.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -198,7 +199,7 @@ static const NSInteger YouTubeMaxResults = 50;
 	NSString *ytChannel = nil;
 	NSString *ytPublishedAt = nil;
 	
-	NSDictionary *object = data[indexPath.row];
+	NSDictionary *object = self.data[indexPath.row];
 	if (object) {
 		
 		if (isSearchVideoId) {
@@ -284,7 +285,7 @@ static const NSInteger YouTubeMaxResults = 50;
 	NSString *ytViewCount = nil;
 	NSString *ytLikeCount = nil;
 	
-	NSDictionary *objectStats = statsData[indexPath.row];
+	NSDictionary *objectStats = self.statsData[indexPath.row];
 	if (objectStats) {
 		if (objectStats[@"items"]) {
 			NSArray *items = (NSArray *)[objectStats valueForKey:@"items"];
@@ -326,7 +327,7 @@ static const NSInteger YouTubeMaxResults = 50;
 - (IBAction)searchAction:(UIButton *)sender
 {
 	if (self.searchTextField.text.length > 0) {
-		[waitSpinner showInView:self.view];
+		[self.waitSpinner showInView:self.view];
 		NSString *str = [self.searchTextField.text stringByReplacingOccurrencesOfString:@" " withString:@"+"];
 		
 		isSearchVideoId = NO;
@@ -360,7 +361,7 @@ static const NSInteger YouTubeMaxResults = 50;
 	
 	NSString *ytVideoId = nil;
 	NSString *ytTitle = nil;
-	NSDictionary *object = data[indexPath.row];
+	NSDictionary *object = self.data[indexPath.row];
 	if (object) {
 	
 		if (isSearchVideoId) {
