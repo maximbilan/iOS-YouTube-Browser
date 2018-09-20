@@ -26,12 +26,19 @@ DEPENDENCIES:
   - WaitSpinner
   - youtube-ios-player-helper
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - SDWebImage
+    - WaitSpinner
+    - youtube-ios-player-helper
+
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   SDWebImage: 0e435c14e402a6730315a0fb79f95e68654d55a4
   WaitSpinner: 61e2629a25e5e43b44d331daddaa3926bc7858cc
   youtube-ios-player-helper: 21ab92db027c7ff86cb17a3843a3f6eafc8158d2
 
-PODFILE CHECKSUM: 3767ba4e9b5b0a8a2437443bb627602c7ed72951
+PODFILE CHECKSUM: d0f3ef598c607302117b0561e683e81f1ff072eb
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.5.3

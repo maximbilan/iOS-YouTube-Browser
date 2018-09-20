@@ -11,14 +11,14 @@
 		075BD03B22848B54C3D82D5E1E796EAF /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = AFAE23A811649AD308AEA0E001075A7A /* AFImageDownloader.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		0D1FFD30267C0776FD3E88EFF51E312F /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E5C1C1AB31836C05677345E843A60C9 /* UIImageView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0D32A806035573E6172DABFDBD27BD24 /* SDImageCacheConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = CEBE93452E159966B6D271E363650FFD /* SDImageCacheConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		13C65F806BE232937C32BDA3A04453D7 /* youtube-ios-player-helper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 24EA93F78821C0593E0C40E4F924BE2C /* youtube-ios-player-helper-dummy.m */; };
+		13C65F806BE232937C32BDA3A04453D7 /* youtube-ios-player-helper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A7FAD332ACE8E970AB0AFA8C95084DC7 /* youtube-ios-player-helper-dummy.m */; };
 		1984740629D1521FFD553C5B5CEF9966 /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C714FB122D9EC252ECD5FCF2A71C649 /* SDWebImageManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		1B3F47733A58136F5BECDD0850BE8E6C /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D85DBFA333047F4F14D81D9277BDC9B7 /* AFNetworkReachabilityManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		1B44A39672C7E4FC9258907D9A4F8919 /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AF1E8C61718612A440FDC0CFB43CA48 /* UIImage+MultiFormat.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		1DE37B962873C24DF98F754119035D1F /* UIImageView+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = BB2EB6B2ABDD8AD1BFCF04328B4A129B /* UIImageView+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1E2A6D057E20BE8F5ED3E594F7B8C286 /* AFNetworking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B0091926A746F70ED9143BE08BD26B6C /* AFNetworking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		258FDC7668E140C6EA2275CE96C2A86D /* SDWebImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B2A82E864A8C2F468D40D09BA56D799A /* SDWebImage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		27AC88BB9B1969254B4DE0CEE5297759 /* WaitSpinner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C9C93A5E6062E956C9FE3AAA46F7CBDC /* WaitSpinner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E2A6D057E20BE8F5ED3E594F7B8C286 /* AFNetworking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CB18AEAFD0366095814791F031AFB8D9 /* AFNetworking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		258FDC7668E140C6EA2275CE96C2A86D /* SDWebImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F633615B447D57F02DBFA61C845EB85E /* SDWebImage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27AC88BB9B1969254B4DE0CEE5297759 /* WaitSpinner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D65304979260BD2427FC55E44B21E9F5 /* WaitSpinner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2988A2AC379140E2A4641D801E547D46 /* YTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A3ECE76FCF94C8EE329A5366AB667D /* YTPlayerView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		2B0705CC26A4CBEE32A5A60284AED35B /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D7B7D7C7F7CC2DF805F14D7D49D4C74 /* UIButton+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2C7AA4BF9A37EED4779DC8A74166087B /* UIView+WebCacheOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = F877E7379A74E5463F8D997B2797177D /* UIView+WebCacheOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -28,7 +28,7 @@
 		36A82EFD00EE92093D2B787571249151 /* SDWebImagePrefetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = EC2E859049E117C1899CA630AFF82B83 /* SDWebImagePrefetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3AD3A852384AE29045A3837B26C18472 /* SDWebImageDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = C6F01EFB6B1E430B2AE4D06799164D56 /* SDWebImageDecoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3D455CF1CEB4C7FCC825283BFF1EE040 /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 72017AE4B8EEFF487B168D8E293A150F /* SDWebImageDownloader.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		3F32257EC54893B98FFEA78DAD6A0089 /* SDWebImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB18883C12ABF38A83167C614D1213B1 /* SDWebImage-dummy.m */; };
+		3F32257EC54893B98FFEA78DAD6A0089 /* SDWebImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5E9EF9C2A14892C254983B3A197F43 /* SDWebImage-dummy.m */; };
 		402249AE91761F1D2A877FC738CED08F /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 639741349981BF733B3521C30414BD1B /* UIImageView+HighlightedWebCache.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		412E5D209BA98BEB1673C80F05B94575 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B6BF3E1A90C6D7817458A94CFBF20E0 /* Foundation.framework */; };
 		413A7D4623004DD3DBD888B4CDB8F07A /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 338BB866935437F167389277E1DA4D00 /* UIImageView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -41,7 +41,7 @@
 		45F802D04B3BE0CAEC586C2F3016027B /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 2596D598E1EED7FB3B6C481D4C953768 /* UIActivityIndicatorView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		46A45325921A22AAAE2AC187C79799FF /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = A77EBFE09A14C556CAB398963A911ABA /* UIProgressView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		47F04CBDF6C54B220F6AEECEF15264D5 /* AFAutoPurgingImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = D80206C73086EF59956E794C45221258 /* AFAutoPurgingImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4D17C1D63A42869B07A1464D69A8980A /* Pods-ios_youtube_browser-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C61CE74BC9343F565F592859B85548 /* Pods-ios_youtube_browser-dummy.m */; };
+		4D17C1D63A42869B07A1464D69A8980A /* Pods-ios_youtube_browser-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EAD84B946FBEB3A678D7386E7CD830D /* Pods-ios_youtube_browser-dummy.m */; };
 		4EE3BD6F91C2EEDDE9FA1E2CD4B23F07 /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B8051E6C86F57478774317691086333C /* AFAutoPurgingImageCache.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		51047C1945103943F70BEADE83725630 /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = C9A2EC6032099A77695955275AD5178A /* UIWebView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		53EF0B120A25F5C6242F25CB7811B787 /* SDImageCacheConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0050106835E41C9B3FA6B05219A437BD /* SDImageCacheConfig.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -52,7 +52,7 @@
 		622455A32782211E321650D8D53F2B6B /* SDWebImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 4895472509CD3882B8EEDA5DC6906637 /* SDWebImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62F43BF91DE9B965FCEDFE42A2DBC042 /* WaitSpinner.h in Headers */ = {isa = PBXBuildFile; fileRef = 649DD4916BED40F1E31A40E36899ED14 /* WaitSpinner.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6573AF9ABA59AC8D1F52B07088197F71 /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 65620D407D720B21E5FF2FB5C170FFB8 /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6DCF670A252E9C20BB5032ABFF0F089D /* Pods-ios_youtube_browser-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 31FCAD2FA63B4605E00ECBCF354E8CC3 /* Pods-ios_youtube_browser-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DCF670A252E9C20BB5032ABFF0F089D /* Pods-ios_youtube_browser-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 87BE4B215BDF4AD3DE83E013D6C0E79E /* Pods-ios_youtube_browser-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		732B15A9D7159F68C9DC8D4E6AD6032A /* UIButton+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = EF99DFC0B7B65D4D66BFA3424FDD8775 /* UIButton+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		789D749690B308852115FF20CD982A69 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C02CB668BE9322713F85E192F44B765 /* CoreGraphics.framework */; };
 		7A112C0F21A62CB6F1AA8D917A6EEA6C /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B6EAB0CAAF60D455D1F16E46A60085E /* AFNetworkActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -72,10 +72,10 @@
 		9C609FA97CE5393017DD16907FE7E43E /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4185B32608D043B62DC51A0E577E81A1 /* UIButton+WebCache.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		A3741CD585B3D3C08A76366368077438 /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D95D67F558D7EA1955636EF4C98508 /* SDWebImageDecoder.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		A3BC115A5093BCB1D161214BD991E33F /* SDWebImageDownloaderOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 6872CDE52A144258D67A07CB68B09DA9 /* SDWebImageDownloaderOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A448AD2E7B7F771F9B4302511437E535 /* AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 371036149970735A2CF75804D15019AC /* AFNetworking-dummy.m */; };
+		A448AD2E7B7F771F9B4302511437E535 /* AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D693941D6157935590798F8CEEBB76EA /* AFNetworking-dummy.m */; };
 		A8886E0B47821D4176A4A45AB410F64F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B6BF3E1A90C6D7817458A94CFBF20E0 /* Foundation.framework */; };
 		A8C297643282E0CF5E7DF9CB6E23A0D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B6BF3E1A90C6D7817458A94CFBF20E0 /* Foundation.framework */; };
-		AB4F7D080F7344E44EEA638F91C6E2C0 /* WaitSpinner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5B9EC015AEF59EACB2635DCE97002 /* WaitSpinner-dummy.m */; };
+		AB4F7D080F7344E44EEA638F91C6E2C0 /* WaitSpinner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 803A3558E2F4F6275C083FC0F03BD5C2 /* WaitSpinner-dummy.m */; };
 		AE976B0E8E3DD81E4F49DBEF19D3C0AD /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 379034296B673ACC94BF007588184A9C /* AFURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B18AB94B2674D949503F74BD379D3FD9 /* UIImageView+HighlightedWebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F1B5FC3EAD56628D114C4FF0437B306 /* UIImageView+HighlightedWebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B5C0BAC0902BC7AA35658BF85D85CE71 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F249D25E216B0A430D28B98AFDC6B4D3 /* UIImageView+WebCache.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -89,7 +89,7 @@
 		D2102D9DE1400DE2CAA33DB49D10A806 /* WaitSpinner.m in Sources */ = {isa = PBXBuildFile; fileRef = D712B715AB441A0F6976F92EFB92E987 /* WaitSpinner.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		DA2C272AF7A28C631B3FDA4AA081B0D5 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A1512EF519DA4E393DBCA482D62FAF /* UIView+WebCacheOperation.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		DD8A664646F4699661C4D6450CF5A8D4 /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 306CC8057A4AE35B8D4233C8FC445F08 /* UIImage+GIF.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		E19D514B1A1EFDB8ABD7338A8AAD27E1 /* youtube-ios-player-helper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 803E2FED30DD865BED7DFBB4268AAD72 /* youtube-ios-player-helper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E19D514B1A1EFDB8ABD7338A8AAD27E1 /* youtube-ios-player-helper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 71A2407E014B5262567896ACCAD5CC6A /* youtube-ios-player-helper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E23B9A6F533461CB33C0FA6FB59E3AB2 /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 61825CD6BCBD04E0CC48CAA2BD76ACDF /* UIKit+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E524D6FE1036EE7492422F895E7DB1FB /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1D7A15A8E10DD873F341CA853392E1 /* UIActivityIndicatorView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		E575A656E1B6DF639EB6E07DC4082BE6 /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A0659C8E604EC3B8574106C8251699FF /* SDWebImageDownloaderOperation.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -136,122 +136,122 @@
 /* Begin PBXFileReference section */
 		0050106835E41C9B3FA6B05219A437BD /* SDImageCacheConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCacheConfig.m; path = SDWebImage/SDImageCacheConfig.m; sourceTree = "<group>"; };
 		03F887F6A9A864F97602EA68DC76821A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
-		0460BDB1DC797701BC9C299B498FBAA1 /* Pods-ios_youtube_browser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ios_youtube_browser.release.xcconfig"; sourceTree = "<group>"; };
 		06E12BAE6F8982901581B990F3E2D128 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
 		09B7F1BF0714DD502E53EC298BBA6CBC /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
-		0C32CCB75FC5F2832940411B1B489836 /* youtube-ios-player-helper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "youtube-ios-player-helper-prefix.pch"; sourceTree = "<group>"; };
-		0C7BBD7EC1D51ADC6D54E4F78444D288 /* youtube-ios-player-helper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "youtube-ios-player-helper.xcconfig"; sourceTree = "<group>"; };
 		0DA4AFE89A0C6F4C97144BFFF5ABD0DC /* UIView+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCache.m"; path = "SDWebImage/UIView+WebCache.m"; sourceTree = "<group>"; };
 		10A3ECE76FCF94C8EE329A5366AB667D /* YTPlayerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YTPlayerView.m; path = Classes/YTPlayerView.m; sourceTree = "<group>"; };
-		11AE8D38E7AAAD6007F3F9B9C2D6BF16 /* AFNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AFNetworking.modulemap; sourceTree = "<group>"; };
 		12D95D67F558D7EA1955636EF4C98508 /* SDWebImageDecoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDecoder.m; path = SDWebImage/SDWebImageDecoder.m; sourceTree = "<group>"; };
 		1D7B7D7C7F7CC2DF805F14D7D49D4C74 /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
-		21C37B9281ED62AA34C36C6B3DB1E790 /* Pods-ios_youtube_browser-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ios_youtube_browser-frameworks.sh"; sourceTree = "<group>"; };
-		24EA93F78821C0593E0C40E4F924BE2C /* youtube-ios-player-helper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "youtube-ios-player-helper-dummy.m"; sourceTree = "<group>"; };
+		1FAC09FCAFABD893823D4464A2F928F1 /* Pods-ios_youtube_browser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ios_youtube_browser.release.xcconfig"; sourceTree = "<group>"; };
+		2140DB6529114C6DE5B5930B9C0BD6CD /* WaitSpinner.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WaitSpinner.xcconfig; sourceTree = "<group>"; };
 		2596D598E1EED7FB3B6C481D4C953768 /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
 		28A1512EF519DA4E393DBCA482D62FAF /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCacheOperation.m"; path = "SDWebImage/UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		2AACEB32993626FA96A94FB2537DB84A /* Pods-ios_youtube_browser-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ios_youtube_browser-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2C714FB122D9EC252ECD5FCF2A71C649 /* SDWebImageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageManager.m; path = SDWebImage/SDWebImageManager.m; sourceTree = "<group>"; };
 		2E5C1C1AB31836C05677345E843A60C9 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
 		306CC8057A4AE35B8D4233C8FC445F08 /* UIImage+GIF.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+GIF.m"; path = "SDWebImage/UIImage+GIF.m"; sourceTree = "<group>"; };
-		31FCAD2FA63B4605E00ECBCF354E8CC3 /* Pods-ios_youtube_browser-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ios_youtube_browser-umbrella.h"; sourceTree = "<group>"; };
-		320D0874457F62EEDEBC89B17BDB6694 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		338BB866935437F167389277E1DA4D00 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
-		33E4F8BF1FDF1005CCBF11AC6542D7F3 /* AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-prefix.pch"; sourceTree = "<group>"; };
 		36366E3069626B1FF29FD2B515326A59 /* SDWebImageCompat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCompat.h; path = SDWebImage/SDWebImageCompat.h; sourceTree = "<group>"; };
-		371036149970735A2CF75804D15019AC /* AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking-dummy.m"; sourceTree = "<group>"; };
 		379034296B673ACC94BF007588184A9C /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
+		3AB37BDD6C5F2D8C3356F937BA8CA778 /* SDWebImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDWebImage-prefix.pch"; sourceTree = "<group>"; };
 		3D1D7A15A8E10DD873F341CA853392E1 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
 		3FADC41F73FD1A9F8DE482561859E625 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
 		4185B32608D043B62DC51A0E577E81A1 /* UIButton+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+WebCache.m"; path = "SDWebImage/UIButton+WebCache.m"; sourceTree = "<group>"; };
 		42FCBB203B3B74CE468B3CCAD5554235 /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SDWebImage.framework; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43564AE7D950F6FBADF4F06A32C96DBC /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
+		44927BA1D90D2A53F3D063E6C8D7F960 /* youtube-ios-player-helper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "youtube-ios-player-helper.modulemap"; sourceTree = "<group>"; };
 		463FB14C73C3BFBA0543937DED68C7EE /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		46CF638CDDA768C88C71E62FD62137A0 /* YTPlayerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YTPlayerView.h; path = Classes/YTPlayerView.h; sourceTree = "<group>"; };
-		477E692B9B5C8C4D203B58E3801533D2 /* WaitSpinner-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WaitSpinner-prefix.pch"; sourceTree = "<group>"; };
 		4895472509CD3882B8EEDA5DC6906637 /* SDWebImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloader.h; path = SDWebImage/SDWebImageDownloader.h; sourceTree = "<group>"; };
 		4A14A5B7D119C23DCB72A5A4C2A27F80 /* UIImage+GIF.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+GIF.h"; path = "SDWebImage/UIImage+GIF.h"; sourceTree = "<group>"; };
 		4A45A0FF10F697088A26C90C8B1BB3DC /* youtube_ios_player_helper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = youtube_ios_player_helper.framework; path = "youtube-ios-player-helper.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A7753C9C75ECFAC656B48BC7BAEBB6D /* AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.xcconfig; sourceTree = "<group>"; };
-		4B945EF3C6D668E0D03E4AFCA8743232 /* Pods-ios_youtube_browser-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ios_youtube_browser-acknowledgements.plist"; sourceTree = "<group>"; };
-		5157B25358AB210452F33FD9B44F84A3 /* Pods-ios_youtube_browser-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ios_youtube_browser-resources.sh"; sourceTree = "<group>"; };
+		4B3A11979A80A568D59111A2AB425B8B /* AFNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AFNetworking.modulemap; sourceTree = "<group>"; };
 		55E72C9E5C26E953C2FE515854D1E9F2 /* WaitSpinner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WaitSpinner.framework; path = WaitSpinner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56F5FDDC23A84BEFD4D15C02C7329AC9 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
 		5AF1E8C61718612A440FDC0CFB43CA48 /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MultiFormat.m"; path = "SDWebImage/UIImage+MultiFormat.m"; sourceTree = "<group>"; };
-		5CC5B9EC015AEF59EACB2635DCE97002 /* WaitSpinner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WaitSpinner-dummy.m"; sourceTree = "<group>"; };
-		5E014982D3B17D1EE9005E1949E64F76 /* Pods-ios_youtube_browser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ios_youtube_browser.debug.xcconfig"; sourceTree = "<group>"; };
 		5F1B5FC3EAD56628D114C4FF0437B306 /* UIImageView+HighlightedWebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+HighlightedWebCache.h"; path = "SDWebImage/UIImageView+HighlightedWebCache.h"; sourceTree = "<group>"; };
 		61825CD6BCBD04E0CC48CAA2BD76ACDF /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
 		639741349981BF733B3521C30414BD1B /* UIImageView+HighlightedWebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+HighlightedWebCache.m"; path = "SDWebImage/UIImageView+HighlightedWebCache.m"; sourceTree = "<group>"; };
 		649DD4916BED40F1E31A40E36899ED14 /* WaitSpinner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WaitSpinner.h; path = ios_wait_spinner/Sources/WaitSpinner.h; sourceTree = "<group>"; };
 		65620D407D720B21E5FF2FB5C170FFB8 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
+		67F77D212C9173D1B8B59F223A81353C /* SDWebImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SDWebImage.modulemap; sourceTree = "<group>"; };
 		684A2F35B79E45B6C670B6A05FA86EFB /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
 		6872CDE52A144258D67A07CB68B09DA9 /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderOperation.h; path = SDWebImage/SDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
+		6C0FD0A7570B3E81A0F4AEB13BEDCD9A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E12DF6D9107FECB320614D9829BA1A7 /* Assets.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = Assets.bundle; path = "youtube-ios-player-helper/Assets.bundle"; sourceTree = "<group>"; };
+		71A2407E014B5262567896ACCAD5CC6A /* youtube-ios-player-helper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "youtube-ios-player-helper-umbrella.h"; sourceTree = "<group>"; };
 		72017AE4B8EEFF487B168D8E293A150F /* SDWebImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloader.m; path = SDWebImage/SDWebImageDownloader.m; sourceTree = "<group>"; };
 		72B68D8ECD7B9F030279CE96778AB564 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AFNetworking.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		73924A46F74FB683FE3537E17D75D5C7 /* WaitSpinner.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WaitSpinner.xcconfig; sourceTree = "<group>"; };
-		7A3DFEEB62CF2CDE97A260C84EE261AF /* Pods-ios_youtube_browser-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ios_youtube_browser-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7B6EAB0CAAF60D455D1F16E46A60085E /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
 		7C02CB668BE9322713F85E192F44B765 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		7CB477C9DAD6A9A880226890B08D619A /* SDWebImageOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageOperation.h; path = SDWebImage/SDWebImageOperation.h; sourceTree = "<group>"; };
+		7E11D7F55EF9CC33970D31903980CCC2 /* AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.xcconfig; sourceTree = "<group>"; };
 		7FB9700F019BE4350837FEAB24E86955 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
-		803E2FED30DD865BED7DFBB4268AAD72 /* youtube-ios-player-helper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "youtube-ios-player-helper-umbrella.h"; sourceTree = "<group>"; };
+		803A3558E2F4F6275C083FC0F03BD5C2 /* WaitSpinner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WaitSpinner-dummy.m"; sourceTree = "<group>"; };
 		846340C2E9EB7D3250AF25F16E54603A /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		87BE4B215BDF4AD3DE83E013D6C0E79E /* Pods-ios_youtube_browser-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ios_youtube_browser-umbrella.h"; sourceTree = "<group>"; };
 		8B6BF3E1A90C6D7817458A94CFBF20E0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		93285A19EABE66C4109B9203D22EF1D9 /* NSData+ImageContentType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+ImageContentType.m"; path = "SDWebImage/NSData+ImageContentType.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9A7A2D359EB172FA804A7E8CE640C055 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EAD84B946FBEB3A678D7386E7CD830D /* Pods-ios_youtube_browser-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ios_youtube_browser-dummy.m"; sourceTree = "<group>"; };
 		A0659C8E604EC3B8574106C8251699FF /* SDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderOperation.m; path = SDWebImage/SDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
 		A67789E3055CB10AD2AC00D8BB99C2F7 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
 		A6E4816DA823FD7E863ADE2E3FA6AF6E /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+MultiFormat.h"; path = "SDWebImage/UIImage+MultiFormat.h"; sourceTree = "<group>"; };
 		A77EBFE09A14C556CAB398963A911ABA /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		A7FAD332ACE8E970AB0AFA8C95084DC7 /* youtube-ios-player-helper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "youtube-ios-player-helper-dummy.m"; sourceTree = "<group>"; };
 		AA42957FE7B273F60FC3AAC1A2811E35 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
 		AAC1CB059C282AE8D5D8441AEE6F9BAE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		AAF024382ACCBEDD0F11422AD3E04139 /* UIImage+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+AFNetworking.h"; path = "UIKit+AFNetworking/UIImage+AFNetworking.h"; sourceTree = "<group>"; };
-		AB7CE3D61380D95E9AB3789F2B464E8A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABDCB248131CD2A052A2B79B2D5D8B4D /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
 		AFAE23A811649AD308AEA0E001075A7A /* AFImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFImageDownloader.m; path = "UIKit+AFNetworking/AFImageDownloader.m"; sourceTree = "<group>"; };
-		B0091926A746F70ED9143BE08BD26B6C /* AFNetworking-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-umbrella.h"; sourceTree = "<group>"; };
-		B0C61CE74BC9343F565F592859B85548 /* Pods-ios_youtube_browser-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ios_youtube_browser-dummy.m"; sourceTree = "<group>"; };
-		B10BAD7DA418AEE2A6543C524FBDAC79 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B2A82E864A8C2F468D40D09BA56D799A /* SDWebImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDWebImage-umbrella.h"; sourceTree = "<group>"; };
 		B48002413064FFFC5F41685692F6CAB5 /* SDWebImageCompat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCompat.m; path = SDWebImage/SDWebImageCompat.m; sourceTree = "<group>"; };
-		B642871F2CDF694D1B7FE546DAA6C82A /* WaitSpinner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = WaitSpinner.modulemap; sourceTree = "<group>"; };
 		B71F337DC2AC31DBF9F91B5A496E506F /* UIView+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCache.h"; path = "SDWebImage/UIView+WebCache.h"; sourceTree = "<group>"; };
 		B8051E6C86F57478774317691086333C /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFAutoPurgingImageCache.m; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.m"; sourceTree = "<group>"; };
-		B95ABA6934254ABF586090B28790EE39 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA5E9EF9C2A14892C254983B3A197F43 /* SDWebImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SDWebImage-dummy.m"; sourceTree = "<group>"; };
 		BB040418930518D7953BBD23312319A8 /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImagePrefetcher.m; path = SDWebImage/SDWebImagePrefetcher.m; sourceTree = "<group>"; };
 		BB2EB6B2ABDD8AD1BFCF04328B4A129B /* UIImageView+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+WebCache.h"; path = "SDWebImage/UIImageView+WebCache.h"; sourceTree = "<group>"; };
 		BB93F8C9B6642B8B1172D6660E6F0BA2 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
 		BBFB7A7A3711BCB76F9A69CC7DF51B41 /* NSImage+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSImage+WebCache.m"; path = "SDWebImage/NSImage+WebCache.m"; sourceTree = "<group>"; };
+		BDB86EC68BDA65F864E42F1CE371DD45 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFCA5B334E567461C48E09B57F57B282 /* NSData+ImageContentType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+ImageContentType.h"; path = "SDWebImage/NSData+ImageContentType.h"; sourceTree = "<group>"; };
+		C0A6D2CBBBFF994B039692405ECD8C30 /* Pods-ios_youtube_browser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ios_youtube_browser.debug.xcconfig"; sourceTree = "<group>"; };
 		C478D3DD4E799BC2677E80A1D4C3B2DD /* SDImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCache.m; path = SDWebImage/SDImageCache.m; sourceTree = "<group>"; };
 		C4ECCD69EE4F915C2731367987A47C0D /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		C6CBF84A13087655D86AA1684E50784A /* youtube-ios-player-helper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "youtube-ios-player-helper-prefix.pch"; sourceTree = "<group>"; };
 		C6F01EFB6B1E430B2AE4D06799164D56 /* SDWebImageDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDecoder.h; path = SDWebImage/SDWebImageDecoder.h; sourceTree = "<group>"; };
+		C850C1D82CB2EDBB8847A1683509FC4D /* youtube-ios-player-helper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "youtube-ios-player-helper.xcconfig"; sourceTree = "<group>"; };
 		C85B2BD61ACBB8AA74E4EE72D2348043 /* NSImage+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSImage+WebCache.h"; path = "SDWebImage/NSImage+WebCache.h"; sourceTree = "<group>"; };
+		C88EA52E24873B97E4AA992BEA3C649F /* WaitSpinner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WaitSpinner.modulemap; sourceTree = "<group>"; };
 		C9A2EC6032099A77695955275AD5178A /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
-		C9C93A5E6062E956C9FE3AAA46F7CBDC /* WaitSpinner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WaitSpinner-umbrella.h"; sourceTree = "<group>"; };
+		C9A6C12E26F64F78DE9BB92050CA0A1C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9ED5731924BDB9CFEC4F8BD94BA4A0C /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AFNetworking.m"; path = "UIKit+AFNetworking/UIButton+AFNetworking.m"; sourceTree = "<group>"; };
 		CA3ED67C242F542421B606C6D525DFC8 /* SDImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCache.h; path = SDWebImage/SDImageCache.h; sourceTree = "<group>"; };
-		CC5BDA911E2924A04519EF7BF40CCDE8 /* SDWebImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDWebImage-prefix.pch"; sourceTree = "<group>"; };
+		CB18AEAFD0366095814791F031AFB8D9 /* AFNetworking-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-umbrella.h"; sourceTree = "<group>"; };
 		CEBE93452E159966B6D271E363650FFD /* SDImageCacheConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCacheConfig.h; path = SDWebImage/SDImageCacheConfig.h; sourceTree = "<group>"; };
 		D02550CE9B434E8FC29188EBE2CB09FA /* Pods_ios_youtube_browser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ios_youtube_browser.framework; path = "Pods-ios_youtube_browser.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0C0E778B3F4F3B6FC39011FD0AA7ECC /* AFImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFImageDownloader.h; path = "UIKit+AFNetworking/AFImageDownloader.h"; sourceTree = "<group>"; };
-		D38BD04E7C21DB374813B451C77FF102 /* SDWebImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SDWebImage.modulemap; sourceTree = "<group>"; };
 		D4D6C5981621861A78CA57D6961A76DB /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
 		D536B59F5D88700A7319C1ECE088FEE2 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
+		D65304979260BD2427FC55E44B21E9F5 /* WaitSpinner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WaitSpinner-umbrella.h"; sourceTree = "<group>"; };
+		D693941D6157935590798F8CEEBB76EA /* AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking-dummy.m"; sourceTree = "<group>"; };
 		D712B715AB441A0F6976F92EFB92E987 /* WaitSpinner.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WaitSpinner.m; path = ios_wait_spinner/Sources/WaitSpinner.m; sourceTree = "<group>"; };
-		D77CEEB6D60229E3FA59B47EDC3E093B /* youtube-ios-player-helper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "youtube-ios-player-helper.modulemap"; sourceTree = "<group>"; };
 		D80206C73086EF59956E794C45221258 /* AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFAutoPurgingImageCache.h; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.h"; sourceTree = "<group>"; };
 		D85DBFA333047F4F14D81D9277BDC9B7 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
-		DB18883C12ABF38A83167C614D1213B1 /* SDWebImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SDWebImage-dummy.m"; sourceTree = "<group>"; };
-		E343FD4A5BBAA9C8D61C24EFE473C17A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD8FE52AF86BC9A061A575615156D2CE /* Pods-ios_youtube_browser-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ios_youtube_browser-frameworks.sh"; sourceTree = "<group>"; };
+		DF3291428F44AC29D5F99E0F9B956C34 /* AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-prefix.pch"; sourceTree = "<group>"; };
+		E04F847843978BEE0B82160A90359FCC /* Pods-ios_youtube_browser-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ios_youtube_browser-resources.sh"; sourceTree = "<group>"; };
+		E26C76E9D548FF70D166C61E16025FA3 /* Pods-ios_youtube_browser.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ios_youtube_browser.modulemap"; sourceTree = "<group>"; };
+		E5B366C91A0DA4D7946859CE708FA1A9 /* Pods-ios_youtube_browser-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ios_youtube_browser-acknowledgements.plist"; sourceTree = "<group>"; };
 		E6D67DA91D906E39CB78ACA7A65872BF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		E91E35382A3B6DCC985069CEBB566C87 /* SDWebImageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageManager.h; path = SDWebImage/SDWebImageManager.h; sourceTree = "<group>"; };
 		EC2E859049E117C1899CA630AFF82B83 /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImagePrefetcher.h; path = SDWebImage/SDWebImagePrefetcher.h; sourceTree = "<group>"; };
+		EC9AE25B56A5D96A8723698FD9034E1D /* SDWebImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SDWebImage.xcconfig; sourceTree = "<group>"; };
+		EE54C058F01C4885C9D3A4F698E9DFD2 /* WaitSpinner-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WaitSpinner-prefix.pch"; sourceTree = "<group>"; };
 		EF99DFC0B7B65D4D66BFA3424FDD8775 /* UIButton+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+WebCache.h"; path = "SDWebImage/UIButton+WebCache.h"; sourceTree = "<group>"; };
-		EFB6ED32F0B14CB2B496BE90B7EDD53B /* SDWebImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SDWebImage.xcconfig; sourceTree = "<group>"; };
 		F249D25E216B0A430D28B98AFDC6B4D3 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+WebCache.m"; path = "SDWebImage/UIImageView+WebCache.m"; sourceTree = "<group>"; };
-		F40E64894DE67558BAB022471EA98416 /* Pods-ios_youtube_browser.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ios_youtube_browser.modulemap"; sourceTree = "<group>"; };
+		F633615B447D57F02DBFA61C845EB85E /* SDWebImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDWebImage-umbrella.h"; sourceTree = "<group>"; };
+		F7D9B8A61E6F1D44BD10C9221FAD8CE7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F877E7379A74E5463F8D997B2797177D /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCacheOperation.h"; path = "SDWebImage/UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -325,24 +325,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1802626AF8806F8C00CD772954CC9EED /* Pods-ios_youtube_browser */ = {
-			isa = PBXGroup;
-			children = (
-				AB7CE3D61380D95E9AB3789F2B464E8A /* Info.plist */,
-				F40E64894DE67558BAB022471EA98416 /* Pods-ios_youtube_browser.modulemap */,
-				7A3DFEEB62CF2CDE97A260C84EE261AF /* Pods-ios_youtube_browser-acknowledgements.markdown */,
-				4B945EF3C6D668E0D03E4AFCA8743232 /* Pods-ios_youtube_browser-acknowledgements.plist */,
-				B0C61CE74BC9343F565F592859B85548 /* Pods-ios_youtube_browser-dummy.m */,
-				21C37B9281ED62AA34C36C6B3DB1E790 /* Pods-ios_youtube_browser-frameworks.sh */,
-				5157B25358AB210452F33FD9B44F84A3 /* Pods-ios_youtube_browser-resources.sh */,
-				31FCAD2FA63B4605E00ECBCF354E8CC3 /* Pods-ios_youtube_browser-umbrella.h */,
-				5E014982D3B17D1EE9005E1949E64F76 /* Pods-ios_youtube_browser.debug.xcconfig */,
-				0460BDB1DC797701BC9C299B498FBAA1 /* Pods-ios_youtube_browser.release.xcconfig */,
-			);
-			name = "Pods-ios_youtube_browser";
-			path = "Target Support Files/Pods-ios_youtube_browser";
-			sourceTree = "<group>";
-		};
 		27365C68C5D4ACEF72EF30BCA4A50087 /* Reachability */ = {
 			isa = PBXGroup;
 			children = (
@@ -363,10 +345,24 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		3E1066B47F81ED9B90A852800E2C9EEE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F7D9B8A61E6F1D44BD10C9221FAD8CE7 /* Info.plist */,
+				C88EA52E24873B97E4AA992BEA3C649F /* WaitSpinner.modulemap */,
+				2140DB6529114C6DE5B5930B9C0BD6CD /* WaitSpinner.xcconfig */,
+				803A3558E2F4F6275C083FC0F03BD5C2 /* WaitSpinner-dummy.m */,
+				EE54C058F01C4885C9D3A4F698E9DFD2 /* WaitSpinner-prefix.pch */,
+				D65304979260BD2427FC55E44B21E9F5 /* WaitSpinner-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/WaitSpinner";
+			sourceTree = "<group>";
+		};
 		429A5862D159ABA0194CEB75A5997F78 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				1802626AF8806F8C00CD772954CC9EED /* Pods-ios_youtube_browser */,
+				AE60F038BA77C64C3873CF9FE06BE831 /* Pods-ios_youtube_browser */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
@@ -377,7 +373,7 @@
 				46CF638CDDA768C88C71E62FD62137A0 /* YTPlayerView.h */,
 				10A3ECE76FCF94C8EE329A5366AB667D /* YTPlayerView.m */,
 				44E97C553B1211F0FB22724ED0481CB0 /* Resources */,
-				D25530634BA8A6B4B6392B01434D2DB0 /* Support Files */,
+				C25A4805438E88E60DE44E44F9934D22 /* Support Files */,
 			);
 			name = "youtube-ios-player-helper";
 			path = "youtube-ios-player-helper";
@@ -429,18 +425,18 @@
 			name = Serialization;
 			sourceTree = "<group>";
 		};
-		788ABE78316BAC10D52D34C07F923E3F /* Support Files */ = {
+		69BBD490E5D1D72D438FFD882970B57B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B10BAD7DA418AEE2A6543C524FBDAC79 /* Info.plist */,
-				B642871F2CDF694D1B7FE546DAA6C82A /* WaitSpinner.modulemap */,
-				73924A46F74FB683FE3537E17D75D5C7 /* WaitSpinner.xcconfig */,
-				5CC5B9EC015AEF59EACB2635DCE97002 /* WaitSpinner-dummy.m */,
-				477E692B9B5C8C4D203B58E3801533D2 /* WaitSpinner-prefix.pch */,
-				C9C93A5E6062E956C9FE3AAA46F7CBDC /* WaitSpinner-umbrella.h */,
+				6C0FD0A7570B3E81A0F4AEB13BEDCD9A /* Info.plist */,
+				67F77D212C9173D1B8B59F223A81353C /* SDWebImage.modulemap */,
+				EC9AE25B56A5D96A8723698FD9034E1D /* SDWebImage.xcconfig */,
+				BA5E9EF9C2A14892C254983B3A197F43 /* SDWebImage-dummy.m */,
+				3AB37BDD6C5F2D8C3356F937BA8CA778 /* SDWebImage-prefix.pch */,
+				F633615B447D57F02DBFA61C845EB85E /* SDWebImage-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/WaitSpinner";
+			path = "../Target Support Files/SDWebImage";
 			sourceTree = "<group>";
 		};
 		7C5AD04CA9E75255ADFC39A0D071FFC1 /* NSURLSession */ = {
@@ -463,20 +459,6 @@
 				D2AC82CEAFE065A035E1753712EE6D2A /* Products */,
 				429A5862D159ABA0194CEB75A5997F78 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		7FCA67489399C8C67AF340AC1370F1E7 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				11AE8D38E7AAAD6007F3F9B9C2D6BF16 /* AFNetworking.modulemap */,
-				4A7753C9C75ECFAC656B48BC7BAEBB6D /* AFNetworking.xcconfig */,
-				371036149970735A2CF75804D15019AC /* AFNetworking-dummy.m */,
-				33E4F8BF1FDF1005CCBF11AC6542D7F3 /* AFNetworking-prefix.pch */,
-				B0091926A746F70ED9143BE08BD26B6C /* AFNetworking-umbrella.h */,
-				B95ABA6934254ABF586090B28790EE39 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/AFNetworking";
 			sourceTree = "<group>";
 		};
 		8D121152E9E6E995F5CC42B96D8FD6F3 /* Core */ = {
@@ -521,18 +503,22 @@
 			name = Core;
 			sourceTree = "<group>";
 		};
-		A10928C7E31801CDB1499B6F88745DD7 /* Support Files */ = {
+		AE60F038BA77C64C3873CF9FE06BE831 /* Pods-ios_youtube_browser */ = {
 			isa = PBXGroup;
 			children = (
-				E343FD4A5BBAA9C8D61C24EFE473C17A /* Info.plist */,
-				D38BD04E7C21DB374813B451C77FF102 /* SDWebImage.modulemap */,
-				EFB6ED32F0B14CB2B496BE90B7EDD53B /* SDWebImage.xcconfig */,
-				DB18883C12ABF38A83167C614D1213B1 /* SDWebImage-dummy.m */,
-				CC5BDA911E2924A04519EF7BF40CCDE8 /* SDWebImage-prefix.pch */,
-				B2A82E864A8C2F468D40D09BA56D799A /* SDWebImage-umbrella.h */,
+				C9A6C12E26F64F78DE9BB92050CA0A1C /* Info.plist */,
+				E26C76E9D548FF70D166C61E16025FA3 /* Pods-ios_youtube_browser.modulemap */,
+				2AACEB32993626FA96A94FB2537DB84A /* Pods-ios_youtube_browser-acknowledgements.markdown */,
+				E5B366C91A0DA4D7946859CE708FA1A9 /* Pods-ios_youtube_browser-acknowledgements.plist */,
+				9EAD84B946FBEB3A678D7386E7CD830D /* Pods-ios_youtube_browser-dummy.m */,
+				DD8FE52AF86BC9A061A575615156D2CE /* Pods-ios_youtube_browser-frameworks.sh */,
+				E04F847843978BEE0B82160A90359FCC /* Pods-ios_youtube_browser-resources.sh */,
+				87BE4B215BDF4AD3DE83E013D6C0E79E /* Pods-ios_youtube_browser-umbrella.h */,
+				C0A6D2CBBBFF994B039692405ECD8C30 /* Pods-ios_youtube_browser.debug.xcconfig */,
+				1FAC09FCAFABD893823D4464A2F928F1 /* Pods-ios_youtube_browser.release.xcconfig */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/SDWebImage";
+			name = "Pods-ios_youtube_browser";
+			path = "Target Support Files/Pods-ios_youtube_browser";
 			sourceTree = "<group>";
 		};
 		B2EC587BE1D563F87BC7822BE2292AD3 /* WaitSpinner */ = {
@@ -540,10 +526,24 @@
 			children = (
 				649DD4916BED40F1E31A40E36899ED14 /* WaitSpinner.h */,
 				D712B715AB441A0F6976F92EFB92E987 /* WaitSpinner.m */,
-				788ABE78316BAC10D52D34C07F923E3F /* Support Files */,
+				3E1066B47F81ED9B90A852800E2C9EEE /* Support Files */,
 			);
 			name = WaitSpinner;
 			path = WaitSpinner;
+			sourceTree = "<group>";
+		};
+		C25A4805438E88E60DE44E44F9934D22 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BDB86EC68BDA65F864E42F1CE371DD45 /* Info.plist */,
+				44927BA1D90D2A53F3D063E6C8D7F960 /* youtube-ios-player-helper.modulemap */,
+				C850C1D82CB2EDBB8847A1683509FC4D /* youtube-ios-player-helper.xcconfig */,
+				A7FAD332ACE8E970AB0AFA8C95084DC7 /* youtube-ios-player-helper-dummy.m */,
+				C6CBF84A13087655D86AA1684E50784A /* youtube-ios-player-helper-prefix.pch */,
+				71A2407E014B5262567896ACCAD5CC6A /* youtube-ios-player-helper-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/youtube-ios-player-helper";
 			sourceTree = "<group>";
 		};
 		C6556040B62393D370116965DE59D374 /* Security */ = {
@@ -553,20 +553,6 @@
 				AA42957FE7B273F60FC3AAC1A2811E35 /* AFSecurityPolicy.m */,
 			);
 			name = Security;
-			sourceTree = "<group>";
-		};
-		D25530634BA8A6B4B6392B01434D2DB0 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				320D0874457F62EEDEBC89B17BDB6694 /* Info.plist */,
-				D77CEEB6D60229E3FA59B47EDC3E093B /* youtube-ios-player-helper.modulemap */,
-				0C7BBD7EC1D51ADC6D54E4F78444D288 /* youtube-ios-player-helper.xcconfig */,
-				24EA93F78821C0593E0C40E4F924BE2C /* youtube-ios-player-helper-dummy.m */,
-				0C32CCB75FC5F2832940411B1B489836 /* youtube-ios-player-helper-prefix.pch */,
-				803E2FED30DD865BED7DFBB4268AAD72 /* youtube-ios-player-helper-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/youtube-ios-player-helper";
 			sourceTree = "<group>";
 		};
 		D2AC82CEAFE065A035E1753712EE6D2A /* Products */ = {
@@ -585,10 +571,24 @@
 			isa = PBXGroup;
 			children = (
 				8D121152E9E6E995F5CC42B96D8FD6F3 /* Core */,
-				A10928C7E31801CDB1499B6F88745DD7 /* Support Files */,
+				69BBD490E5D1D72D438FFD882970B57B /* Support Files */,
 			);
 			name = SDWebImage;
 			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+		EB749B66CECE27A39BECBC3AC9FC8858 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4B3A11979A80A568D59111A2AB425B8B /* AFNetworking.modulemap */,
+				7E11D7F55EF9CC33970D31903980CCC2 /* AFNetworking.xcconfig */,
+				D693941D6157935590798F8CEEBB76EA /* AFNetworking-dummy.m */,
+				DF3291428F44AC29D5F99E0F9B956C34 /* AFNetworking-prefix.pch */,
+				CB18AEAFD0366095814791F031AFB8D9 /* AFNetworking-umbrella.h */,
+				9A7A2D359EB172FA804A7E8CE640C055 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AFNetworking";
 			sourceTree = "<group>";
 		};
 		EC33E5C9DF59242E4B8440D54674AF5D /* AFNetworking */ = {
@@ -599,7 +599,7 @@
 				27365C68C5D4ACEF72EF30BCA4A50087 /* Reachability */,
 				C6556040B62393D370116965DE59D374 /* Security */,
 				548F4C9F57013C3B9D45A14755682A43 /* Serialization */,
-				7FCA67489399C8C67AF340AC1370F1E7 /* Support Files */,
+				EB749B66CECE27A39BECBC3AC9FC8858 /* Support Files */,
 				547950DD397026E54F3A961AEB78049A /* UIKit */,
 			);
 			name = AFNetworking;
@@ -786,8 +786,8 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -926,65 +926,57 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		01249AF42180F1C0ED29956CC5354B4E /* Debug */ = {
+		16BF46929234483799EDBEF335302B0B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E014982D3B17D1EE9005E1949E64F76 /* Pods-ios_youtube_browser.debug.xcconfig */;
+			baseConfigurationReference = C850C1D82CB2EDBB8847A1683509FC4D /* youtube-ios-player-helper.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-ios_youtube_browser/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/youtube-ios-player-helper/youtube-ios-player-helper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/youtube-ios-player-helper/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ios_youtube_browser/Pods-ios_youtube_browser.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_ios_youtube_browser;
+				MODULEMAP_FILE = "Target Support Files/youtube-ios-player-helper/youtube-ios-player-helper.modulemap";
+				PRODUCT_MODULE_NAME = youtube_ios_player_helper;
+				PRODUCT_NAME = youtube_ios_player_helper;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		1C3F0984B0D926A7F90703043C4B90A4 /* Release */ = {
+		1DF87D75AD6508205BB17F7202A926CA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 73924A46F74FB683FE3537E17D75D5C7 /* WaitSpinner.xcconfig */;
+			baseConfigurationReference = 2140DB6529114C6DE5B5930B9C0BD6CD /* WaitSpinner.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/WaitSpinner/WaitSpinner-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/WaitSpinner/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/WaitSpinner/WaitSpinner.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_MODULE_NAME = WaitSpinner;
 				PRODUCT_NAME = WaitSpinner;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -993,193 +985,155 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
-		};
-		27CD7CAD3EA88521CD9EA4AFC792FD6C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0460BDB1DC797701BC9C299B498FBAA1 /* Pods-ios_youtube_browser.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-ios_youtube_browser/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ios_youtube_browser/Pods-ios_youtube_browser.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_ios_youtube_browser;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		31C0B4AB17C6990C567CCEF352A0B2B9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C7BBD7EC1D51ADC6D54E4F78444D288 /* youtube-ios-player-helper.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/youtube-ios-player-helper/youtube-ios-player-helper-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/youtube-ios-player-helper/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/youtube-ios-player-helper/youtube-ios-player-helper.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = youtube_ios_player_helper;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
 			name = Debug;
 		};
-		3890D7C92DE120C2BA762135796CFA80 /* Release */ = {
+		1EE19F5DD95931924296F637BF18BD8F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		3BADA370475E93942AD0153572E1B595 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		3DB4070CB303A0503D7CDA94B0C5CD6E /* Release */ = {
+		3ECE89EED911E6A6BD28972E1CAE7261 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C7BBD7EC1D51ADC6D54E4F78444D288 /* youtube-ios-player-helper.xcconfig */;
+			baseConfigurationReference = C0A6D2CBBBFF994B039692405ECD8C30 /* Pods-ios_youtube_browser.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ios_youtube_browser/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ios_youtube_browser/Pods-ios_youtube_browser.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		63D3F5FF161D58F5A5D53D84F72BBB3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2140DB6529114C6DE5B5930B9C0BD6CD /* WaitSpinner.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/WaitSpinner/WaitSpinner-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WaitSpinner/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/WaitSpinner/WaitSpinner.modulemap";
+				PRODUCT_MODULE_NAME = WaitSpinner;
+				PRODUCT_NAME = WaitSpinner;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		80BED8453E4393F35C992DBC8A301068 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C850C1D82CB2EDBB8847A1683509FC4D /* youtube-ios-player-helper.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/youtube-ios-player-helper/youtube-ios-player-helper-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/youtube-ios-player-helper/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/youtube-ios-player-helper/youtube-ios-player-helper.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_MODULE_NAME = youtube_ios_player_helper;
 				PRODUCT_NAME = youtube_ios_player_helper;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1188,130 +1142,62 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
-		};
-		48B840D2793AAB7C9D61C26A2EE76EC9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EFB6ED32F0B14CB2B496BE90B7EDD53B /* SDWebImage.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SDWebImage/SDWebImage-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SDWebImage/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SDWebImage/SDWebImage.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SDWebImage;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C7F5E9F26C62C1329854E595A488A56A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A7753C9C75ECFAC656B48BC7BAEBB6D /* AFNetworking.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AFNetworking/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AFNetworking/AFNetworking.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = AFNetworking;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
 			name = Debug;
 		};
-		D15010D951FEE602B43772E9A2938F28 /* Release */ = {
+		8523AD744CE55B3E7344A4CF5F535FF1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A7753C9C75ECFAC656B48BC7BAEBB6D /* AFNetworking.xcconfig */;
+			baseConfigurationReference = 1FAC09FCAFABD893823D4464A2F928F1 /* Pods-ios_youtube_browser.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AFNetworking/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-ios_youtube_browser/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AFNetworking/AFNetworking.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = AFNetworking;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ios_youtube_browser/Pods-ios_youtube_browser.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		E123E25BF4D13311C25A28982E3A5644 /* Debug */ = {
+		CCE522F5F31926D0042F82BE9F20064A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EFB6ED32F0B14CB2B496BE90B7EDD53B /* SDWebImage.xcconfig */;
+			baseConfigurationReference = EC9AE25B56A5D96A8723698FD9034E1D /* SDWebImage.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/SDWebImage/SDWebImage-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SDWebImage/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SDWebImage/SDWebImage.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_MODULE_NAME = SDWebImage;
 				PRODUCT_NAME = SDWebImage;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1322,30 +1208,27 @@
 			};
 			name = Debug;
 		};
-		E1814F9A1A64404CDFB9C2542F679CE8 /* Debug */ = {
+		E55F33F8AB663E35174F84964A71BD87 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 73924A46F74FB683FE3537E17D75D5C7 /* WaitSpinner.xcconfig */;
+			baseConfigurationReference = 7E11D7F55EF9CC33970D31903980CCC2 /* AFNetworking.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/WaitSpinner/WaitSpinner-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/WaitSpinner/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AFNetworking/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/WaitSpinner/WaitSpinner.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = WaitSpinner;
+				MODULEMAP_FILE = "Target Support Files/AFNetworking/AFNetworking.modulemap";
+				PRODUCT_MODULE_NAME = AFNetworking;
+				PRODUCT_NAME = AFNetworking;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -1354,6 +1237,126 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		F4568DEE257655D290C2B9CEAB37C934 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		F8C5D495DCE994EA0D4CE27454017EAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E11D7F55EF9CC33970D31903980CCC2 /* AFNetworking.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AFNetworking/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AFNetworking/AFNetworking.modulemap";
+				PRODUCT_MODULE_NAME = AFNetworking;
+				PRODUCT_NAME = AFNetworking;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FF81347BFDBC9B8D45CB4BD0AA7D2808 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC9AE25B56A5D96A8723698FD9034E1D /* SDWebImage.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SDWebImage/SDWebImage-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SDWebImage/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SDWebImage/SDWebImage.modulemap";
+				PRODUCT_MODULE_NAME = SDWebImage;
+				PRODUCT_NAME = SDWebImage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -1361,8 +1364,8 @@
 		298865EEF736E725AEFDC0C3905AF42A /* Build configuration list for PBXNativeTarget "SDWebImage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E123E25BF4D13311C25A28982E3A5644 /* Debug */,
-				48B840D2793AAB7C9D61C26A2EE76EC9 /* Release */,
+				CCE522F5F31926D0042F82BE9F20064A /* Debug */,
+				FF81347BFDBC9B8D45CB4BD0AA7D2808 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1370,8 +1373,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3BADA370475E93942AD0153572E1B595 /* Debug */,
-				3890D7C92DE120C2BA762135796CFA80 /* Release */,
+				1EE19F5DD95931924296F637BF18BD8F /* Debug */,
+				F4568DEE257655D290C2B9CEAB37C934 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1379,8 +1382,8 @@
 		31E01BC98C827BD8A78F94173CDCC418 /* Build configuration list for PBXNativeTarget "AFNetworking" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C7F5E9F26C62C1329854E595A488A56A /* Debug */,
-				D15010D951FEE602B43772E9A2938F28 /* Release */,
+				E55F33F8AB663E35174F84964A71BD87 /* Debug */,
+				F8C5D495DCE994EA0D4CE27454017EAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1388,8 +1391,8 @@
 		BB5D0FB3B33DB22DEFC36D73C869C1C5 /* Build configuration list for PBXNativeTarget "WaitSpinner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E1814F9A1A64404CDFB9C2542F679CE8 /* Debug */,
-				1C3F0984B0D926A7F90703043C4B90A4 /* Release */,
+				1DF87D75AD6508205BB17F7202A926CA /* Debug */,
+				63D3F5FF161D58F5A5D53D84F72BBB3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1397,8 +1400,8 @@
 		CA74A2360A49222CC2B827355C7370F7 /* Build configuration list for PBXNativeTarget "Pods-ios_youtube_browser" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				01249AF42180F1C0ED29956CC5354B4E /* Debug */,
-				27CD7CAD3EA88521CD9EA4AFC792FD6C /* Release */,
+				3ECE89EED911E6A6BD28972E1CAE7261 /* Debug */,
+				8523AD744CE55B3E7344A4CF5F535FF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1406,8 +1409,8 @@
 		E060590A2FD78E3A4FE21E623941C36D /* Build configuration list for PBXNativeTarget "youtube-ios-player-helper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				31C0B4AB17C6990C567CCEF352A0B2B9 /* Debug */,
-				3DB4070CB303A0503D7CDA94B0C5CD6E /* Release */,
+				80BED8453E4393F35C992DBC8A301068 /* Debug */,
+				16BF46929234483799EDBEF335302B0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
