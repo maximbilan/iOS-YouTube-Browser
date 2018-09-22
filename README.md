@@ -41,7 +41,7 @@ AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager]
 }];
 </pre>
 
-And the second question. For this you can use the <a href="https://github.com/youtube/youtube-ios-player-helper">YouTube Player</a>. It’s great control. And really simple usage:
+And the second question. For this you can use the <a href="https://github.com/youtube/youtube-ios-player-helper">YouTube Player</a>. It’s a great control with a really simple usage:
 
 <pre>
 [self.playerView loadWithVideoId:@"M7lc1UVf-VE"];
