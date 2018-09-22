@@ -1,6 +1,6 @@
 # iOS YouTube Browser Sample
 
-This tutorial explains how to create simple <i>iOS</i> application which working with <i>YouTube API</i>.
+This tutorial explains how to create a simple <i>iOS</i> application which working with <i>YouTube API</i>.
 
 First of all, you should create <i>Google</i> account, if you haven’t. Go to <a href="https://console.developers.google.com/project">Google Developers Console</a> and create the project.
 
@@ -10,7 +10,7 @@ In created project, you will have lots of settings, statistics, something else. 
 
 ![alt tag](https://raw.github.com/maximbilan/ios_youtube_browser/master/img/img2.png)
 
-Also you need to create <i>iOS</i> key by this <a href="https://code.google.com/apis/console/?noredirect">link</a> on the <i>API</i> access tab and <i>Create new iOS key</i> button.
+Also you need to create an <i>iOS</i> key by this <a href="https://code.google.com/apis/console/?noredirect">link</a> on the <i>API</i> access tab and <i>Create new iOS key</i> button.
 
 ![alt tag](https://raw.github.com/maximbilan/ios_youtube_browser/master/img/img3.png)
 
@@ -22,7 +22,7 @@ We have two question for our simple application. How to receive data from <i>You
 
 For receiving the data we will use the next <a href="https://developers.google.com/apis-explorer/#p/youtube/v3/youtube.search.list">request</a>. Google provides lots of information about API, you can found <a href="https://developers.google.com/youtube/v3/">here</a>. Full information about API, <a href="https://developers.google.com/youtube/v3/sample_requests">samples</a>, etc.
 
-Sample code for request using <i>AFNetworking</i>:
+The sample code for a request using <i>AFNetworking</i>:
 
 <pre>
 static NSString * const YouTubeBaseUrl = @"https://www.googleapis.com/youtube/v3/search?part=snippet&q=%@&type=video&videoCaption=closedCaption&key=%@&maxResults=%@";
@@ -41,7 +41,7 @@ AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager]
 }];
 </pre>
 
-And second question. For this you can use the <a href="https://github.com/youtube/youtube-ios-player-helper">YouTube Player</a>. It’s great control. And really simple usage:
+And the second question. For this you can use the <a href="https://github.com/youtube/youtube-ios-player-helper">YouTube Player</a>. It’s great control. And really simple usage:
 
 <pre>
 [self.playerView loadWithVideoId:@"M7lc1UVf-VE"];
